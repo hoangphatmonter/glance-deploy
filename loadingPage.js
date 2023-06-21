@@ -21,7 +21,7 @@ try {
 let isNormalGame = isBumperAd == true && isMRECEnabledOnLP != 'true' ? false : true //true means playing in browser
 
 function sendCustomAnalyticsEvent(eventType, extras) {
-    console.log('sendCustomAnalyticsEvent', eventType, extras)
+    // console.log('sendCustomAnalyticsEvent', eventType, extras)
     if (isSdkNew) {
         const data = JSON.stringify(extras)
         window.GlanceAndroidInterface.sendCustomAnalyticsEvent(eventType, data)
