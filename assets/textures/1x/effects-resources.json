@@ -1,264 +1,75 @@
 {
 	"textures": [
 		{
-			"image": "effects-resources.png",
+			"image": "effects-resources-0.png",
 			"format": "RGBA8888",
 			"size": {
-				"w": 244,
-				"h": 370
+				"w": 843,
+				"h": 843
 			},
 			"scale": 0.5,
 			"frames": [
 				{
-					"filename": "glow-light",
+					"filename": "ribbon/falling-confetti/confetti-b/confetti-b-4",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 206,
-						"h": 200
+						"w": 13,
+						"h": 1
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 206,
-						"h": 200
+						"w": 13,
+						"h": 1
 					},
 					"frame": {
-						"x": 2,
-						"y": 2,
-						"w": 206,
-						"h": 200
+						"x": 1,
+						"y": 1,
+						"w": 13,
+						"h": 1
 					}
 				},
 				{
-					"filename": "circle",
+					"filename": "ribbon/falling-confetti/confetti-a/confetti-a-3",
 					"rotated": false,
 					"trimmed": false,
-					"sourceSize": {
-						"w": 162,
-						"h": 162
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 162,
-						"h": 162
-					},
-					"frame": {
-						"x": 2,
-						"y": 206,
-						"w": 162,
-						"h": 162
-					}
-				},
-				{
-					"filename": "star-white",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 35,
-						"h": 35
-					},
-					"spriteSourceSize": {
-						"x": 5,
-						"y": 4,
-						"w": 23,
-						"h": 25
-					},
-					"frame": {
-						"x": 212,
-						"y": 2,
-						"w": 23,
-						"h": 25
-					}
-				},
-				{
-					"filename": "spark",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 17,
-						"h": 17
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 17,
-						"h": 17
-					},
-					"frame": {
-						"x": 212,
-						"y": 31,
-						"w": 17,
-						"h": 17
-					}
-				},
-				{
-					"filename": "star-y/star-3",
-					"rotated": false,
-					"trimmed": true,
 					"sourceSize": {
 						"w": 11,
-						"h": 10
-					},
-					"spriteSourceSize": {
-						"x": 3,
-						"y": 0,
-						"w": 6,
-						"h": 10
-					},
-					"frame": {
-						"x": 233,
-						"y": 31,
-						"w": 6,
-						"h": 10
-					}
-				},
-				{
-					"filename": "confetti/small-1",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 14,
-						"h": 16
+						"h": 2
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 14,
-						"h": 16
+						"w": 11,
+						"h": 2
 					},
 					"frame": {
-						"x": 212,
-						"y": 52,
-						"w": 14,
-						"h": 16
-					}
-				},
-				{
-					"filename": "confetti/small-4",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 14,
-						"h": 16
-					},
-					"spriteSourceSize": {
-						"x": 1,
-						"y": 0,
-						"w": 12,
-						"h": 16
-					},
-					"frame": {
-						"x": 230,
-						"y": 52,
-						"w": 12,
-						"h": 16
-					}
-				},
-				{
-					"filename": "confetti/small-2",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 14,
-						"h": 16
-					},
-					"spriteSourceSize": {
-						"x": 0,
+						"x": 16,
 						"y": 1,
-						"w": 14,
-						"h": 15
-					},
-					"frame": {
-						"x": 212,
-						"y": 72,
-						"w": 14,
-						"h": 15
+						"w": 11,
+						"h": 2
 					}
 				},
 				{
-					"filename": "ribbon/falling-confetti/confetti-c/confetti-c-1",
+					"filename": "ribbon/falling-confetti/confetti-d/confetti-d-4",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
 						"w": 12,
-						"h": 8
+						"h": 2
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
 						"w": 12,
-						"h": 8
+						"h": 2
 					},
 					"frame": {
-						"x": 230,
-						"y": 72,
+						"x": 29,
+						"y": 1,
 						"w": 12,
-						"h": 8
-					}
-				},
-				{
-					"filename": "ribbon/falling-confetti/confetti-b/confetti-b-1",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 12,
-						"h": 7
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 12,
-						"h": 7
-					},
-					"frame": {
-						"x": 230,
-						"y": 84,
-						"w": 12,
-						"h": 7
-					}
-				},
-				{
-					"filename": "confetti/small-3",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 14,
-						"h": 16
-					},
-					"spriteSourceSize": {
-						"x": 1,
-						"y": 0,
-						"w": 13,
-						"h": 16
-					},
-					"frame": {
-						"x": 212,
-						"y": 91,
-						"w": 13,
-						"h": 16
-					}
-				},
-				{
-					"filename": "ribbon/falling-confetti/confetti-c/confetti-c-2",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 13,
-						"h": 5
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 13,
-						"h": 5
-					},
-					"frame": {
-						"x": 229,
-						"y": 95,
-						"w": 13,
-						"h": 5
+						"h": 2
 					}
 				},
 				{
@@ -276,31 +87,94 @@
 						"h": 3
 					},
 					"frame": {
-						"x": 229,
-						"y": 104,
+						"x": 43,
+						"y": 1,
 						"w": 13,
 						"h": 3
 					}
 				},
 				{
-					"filename": "ribbon/falling-confetti/confetti-b/confetti-b-4",
+					"filename": "ribbon/falling-confetti/confetti-c/confetti-c-4",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 13,
-						"h": 1
+						"w": 11,
+						"h": 3
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 13,
-						"h": 1
+						"w": 11,
+						"h": 3
 					},
 					"frame": {
-						"x": 212,
-						"y": 111,
-						"w": 13,
-						"h": 1
+						"x": 58,
+						"y": 1,
+						"w": 11,
+						"h": 3
+					}
+				},
+				{
+					"filename": "ribbon/falling-confetti/confetti-d/confetti-d-3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 12,
+						"h": 3
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 12,
+						"h": 3
+					},
+					"frame": {
+						"x": 71,
+						"y": 1,
+						"w": 12,
+						"h": 3
+					}
+				},
+				{
+					"filename": "ribbon/falling-confetti/confetti-a/confetti-a-2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 11,
+						"h": 4
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 11,
+						"h": 4
+					},
+					"frame": {
+						"x": 85,
+						"y": 1,
+						"w": 11,
+						"h": 4
+					}
+				},
+				{
+					"filename": "ribbon/falling-confetti/confetti-c/confetti-c-3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 12,
+						"h": 4
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 12,
+						"h": 4
+					},
+					"frame": {
+						"x": 98,
+						"y": 1,
+						"w": 12,
+						"h": 4
 					}
 				},
 				{
@@ -318,9 +192,30 @@
 						"h": 5
 					},
 					"frame": {
-						"x": 229,
-						"y": 111,
+						"x": 112,
+						"y": 1,
 						"w": 12,
+						"h": 5
+					}
+				},
+				{
+					"filename": "ribbon/falling-confetti/confetti-c/confetti-c-2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 13,
+						"h": 5
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 13,
+						"h": 5
+					},
+					"frame": {
+						"x": 126,
+						"y": 1,
+						"w": 13,
 						"h": 5
 					}
 				},
@@ -339,73 +234,157 @@
 						"h": 5
 					},
 					"frame": {
-						"x": 212,
-						"y": 116,
+						"x": 141,
+						"y": 1,
 						"w": 12,
 						"h": 5
 					}
 				},
 				{
-					"filename": "ribbon/falling-confetti/confetti-c/confetti-c-3",
+					"filename": "star-x/star-4",
 					"rotated": false,
-					"trimmed": false,
+					"trimmed": true,
 					"sourceSize": {
-						"w": 12,
-						"h": 4
+						"w": 11,
+						"h": 10
 					},
 					"spriteSourceSize": {
 						"x": 0,
-						"y": 0,
-						"w": 12,
-						"h": 4
+						"y": 2,
+						"w": 11,
+						"h": 6
 					},
 					"frame": {
-						"x": 228,
-						"y": 120,
-						"w": 12,
-						"h": 4
+						"x": 155,
+						"y": 1,
+						"w": 11,
+						"h": 6
 					}
 				},
 				{
-					"filename": "ribbon/falling-confetti/confetti-d/confetti-d-3",
+					"filename": "ribbon/falling-confetti/confetti-a/confetti-a-1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 12,
-						"h": 3
+						"w": 11,
+						"h": 7
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 12,
-						"h": 3
+						"w": 11,
+						"h": 7
 					},
 					"frame": {
-						"x": 212,
-						"y": 125,
-						"w": 12,
-						"h": 3
+						"x": 168,
+						"y": 1,
+						"w": 11,
+						"h": 7
 					}
 				},
 				{
-					"filename": "ribbon/falling-confetti/confetti-d/confetti-d-4",
+					"filename": "ribbon/falling-confetti/confetti-b/confetti-b-1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
 						"w": 12,
-						"h": 2
+						"h": 7
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
 						"w": 12,
-						"h": 2
+						"h": 7
 					},
 					"frame": {
-						"x": 228,
-						"y": 128,
+						"x": 181,
+						"y": 1,
 						"w": 12,
-						"h": 2
+						"h": 7
+					}
+				},
+				{
+					"filename": "ribbon/falling-confetti/confetti-d/confetti-d-1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 11,
+						"h": 7
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 11,
+						"h": 7
+					},
+					"frame": {
+						"x": 195,
+						"y": 1,
+						"w": 11,
+						"h": 7
+					}
+				},
+				{
+					"filename": "ribbon/falling-confetti/confetti-c/confetti-c-1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 12,
+						"h": 8
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 12,
+						"h": 8
+					},
+					"frame": {
+						"x": 208,
+						"y": 1,
+						"w": 12,
+						"h": 8
+					}
+				},
+				{
+					"filename": "star-x/star-3",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 11,
+						"h": 10
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 1,
+						"w": 11,
+						"h": 8
+					},
+					"frame": {
+						"x": 222,
+						"y": 1,
+						"w": 11,
+						"h": 8
+					}
+				},
+				{
+					"filename": "bomb-defuse/bomb-defuse-0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 10,
+						"h": 10
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 10,
+						"h": 10
+					},
+					"frame": {
+						"x": 235,
+						"y": 1,
+						"w": 10,
+						"h": 10
 					}
 				},
 				{
@@ -423,8 +402,8 @@
 						"h": 10
 					},
 					"frame": {
-						"x": 212,
-						"y": 132,
+						"x": 247,
+						"y": 1,
 						"w": 11,
 						"h": 10
 					}
@@ -444,8 +423,8 @@
 						"h": 10
 					},
 					"frame": {
-						"x": 212,
-						"y": 132,
+						"x": 247,
+						"y": 1,
 						"w": 11,
 						"h": 10
 					}
@@ -465,9 +444,51 @@
 						"h": 10
 					},
 					"frame": {
-						"x": 227,
-						"y": 134,
+						"x": 260,
+						"y": 1,
 						"w": 11,
+						"h": 10
+					}
+				},
+				{
+					"filename": "star-y/star-2",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 11,
+						"h": 10
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 0,
+						"w": 10,
+						"h": 10
+					},
+					"frame": {
+						"x": 273,
+						"y": 1,
+						"w": 10,
+						"h": 10
+					}
+				},
+				{
+					"filename": "star-y/star-3",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 11,
+						"h": 10
+					},
+					"spriteSourceSize": {
+						"x": 3,
+						"y": 0,
+						"w": 6,
+						"h": 10
+					},
+					"frame": {
+						"x": 285,
+						"y": 1,
+						"w": 6,
 						"h": 10
 					}
 				},
@@ -486,262 +507,2026 @@
 						"h": 10
 					},
 					"frame": {
-						"x": 212,
-						"y": 146,
+						"x": 293,
+						"y": 1,
 						"w": 11,
 						"h": 10
 					}
 				},
 				{
-					"filename": "star-x/star-3",
+					"filename": "rocket-explosion/rocket-explosion-0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 11,
+						"h": 13
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 11,
+						"h": 13
+					},
+					"frame": {
+						"x": 306,
+						"y": 1,
+						"w": 11,
+						"h": 13
+					}
+				},
+				{
+					"filename": "confetti/small-2",
 					"rotated": false,
 					"trimmed": true,
 					"sourceSize": {
-						"w": 11,
-						"h": 10
+						"w": 14,
+						"h": 16
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 1,
-						"w": 11,
-						"h": 8
+						"w": 14,
+						"h": 15
 					},
 					"frame": {
-						"x": 227,
-						"y": 148,
-						"w": 11,
-						"h": 8
+						"x": 319,
+						"y": 1,
+						"w": 14,
+						"h": 15
 					}
 				},
 				{
-					"filename": "ribbon/falling-confetti/confetti-a/confetti-a-1",
+					"filename": "confetti/small-1",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
-						"w": 11,
-						"h": 7
+						"w": 14,
+						"h": 16
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 0,
-						"w": 11,
-						"h": 7
+						"w": 14,
+						"h": 16
 					},
 					"frame": {
-						"x": 212,
-						"y": 160,
-						"w": 11,
-						"h": 7
+						"x": 335,
+						"y": 1,
+						"w": 14,
+						"h": 16
 					}
 				},
 				{
-					"filename": "ribbon/falling-confetti/confetti-d/confetti-d-1",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 11,
-						"h": 7
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 11,
-						"h": 7
-					},
-					"frame": {
-						"x": 227,
-						"y": 160,
-						"w": 11,
-						"h": 7
-					}
-				},
-				{
-					"filename": "star-x/star-4",
+					"filename": "confetti/small-3",
 					"rotated": false,
 					"trimmed": true,
 					"sourceSize": {
-						"w": 11,
-						"h": 10
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 2,
-						"w": 11,
-						"h": 6
-					},
-					"frame": {
-						"x": 212,
-						"y": 171,
-						"w": 11,
-						"h": 6
-					}
-				},
-				{
-					"filename": "ribbon/falling-confetti/confetti-a/confetti-a-2",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 11,
-						"h": 4
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 11,
-						"h": 4
-					},
-					"frame": {
-						"x": 227,
-						"y": 171,
-						"w": 11,
-						"h": 4
-					}
-				},
-				{
-					"filename": "ribbon/falling-confetti/confetti-c/confetti-c-4",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 11,
-						"h": 3
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 11,
-						"h": 3
-					},
-					"frame": {
-						"x": 227,
-						"y": 179,
-						"w": 11,
-						"h": 3
-					}
-				},
-				{
-					"filename": "ribbon/falling-confetti/confetti-a/confetti-a-3",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 11,
-						"h": 2
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 11,
-						"h": 2
-					},
-					"frame": {
-						"x": 212,
-						"y": 181,
-						"w": 11,
-						"h": 2
-					}
-				},
-				{
-					"filename": "star-y/star-2",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 11,
-						"h": 10
+						"w": 14,
+						"h": 16
 					},
 					"spriteSourceSize": {
 						"x": 1,
 						"y": 0,
-						"w": 10,
-						"h": 10
+						"w": 13,
+						"h": 16
 					},
 					"frame": {
-						"x": 227,
-						"y": 186,
-						"w": 10,
-						"h": 10
+						"x": 351,
+						"y": 1,
+						"w": 13,
+						"h": 16
 					}
 				},
 				{
-					"filename": "blank",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 50,
-						"h": 50
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 50,
-						"h": 50
-					},
-					"frame": {
-						"x": 168,
-						"y": 206,
-						"w": 50,
-						"h": 50
-					}
-				},
-				{
-					"filename": "coin",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 38,
-						"h": 36
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 38,
-						"h": 36
-					},
-					"frame": {
-						"x": 168,
-						"y": 260,
-						"w": 38,
-						"h": 36
-					}
-				},
-				{
-					"filename": "ribbon/ribbon",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 32,
-						"h": 1
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 32,
-						"h": 1
-					},
-					"frame": {
-						"x": 210,
-						"y": 260,
-						"w": 32,
-						"h": 1
-					}
-				},
-				{
-					"filename": "comet",
+					"filename": "confetti/small-4",
 					"rotated": false,
 					"trimmed": true,
 					"sourceSize": {
-						"w": 40,
-						"h": 40
+						"w": 14,
+						"h": 16
 					},
 					"spriteSourceSize": {
-						"x": 2,
+						"x": 1,
 						"y": 0,
-						"w": 35,
-						"h": 39
+						"w": 12,
+						"h": 16
 					},
 					"frame": {
-						"x": 168,
-						"y": 300,
+						"x": 366,
+						"y": 1,
+						"w": 12,
+						"h": 16
+					}
+				},
+				{
+					"filename": "spark",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 16
+					},
+					"frame": {
+						"x": 380,
+						"y": 1,
+						"w": 16,
+						"h": 16
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-0",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 8,
+						"y": 4,
+						"w": 17,
+						"h": 17
+					},
+					"frame": {
+						"x": 398,
+						"y": 1,
+						"w": 17,
+						"h": 17
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-1",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 8,
+						"y": 4,
+						"w": 17,
+						"h": 17
+					},
+					"frame": {
+						"x": 398,
+						"y": 1,
+						"w": 17,
+						"h": 17
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-2",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 8,
+						"y": 4,
+						"w": 17,
+						"h": 17
+					},
+					"frame": {
+						"x": 417,
+						"y": 1,
+						"w": 17,
+						"h": 17
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-3",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 8,
+						"y": 4,
+						"w": 18,
+						"h": 17
+					},
+					"frame": {
+						"x": 436,
+						"y": 1,
+						"w": 18,
+						"h": 17
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-4",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 8,
+						"y": 4,
+						"w": 18,
+						"h": 17
+					},
+					"frame": {
+						"x": 456,
+						"y": 1,
+						"w": 18,
+						"h": 17
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-48",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 6,
+						"y": 4,
+						"w": 21,
+						"h": 17
+					},
+					"frame": {
+						"x": 476,
+						"y": 1,
+						"w": 21,
+						"h": 17
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-49",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 6,
+						"y": 4,
+						"w": 20,
+						"h": 17
+					},
+					"frame": {
+						"x": 499,
+						"y": 1,
+						"w": 20,
+						"h": 17
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-5",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 8,
+						"y": 4,
+						"w": 18,
+						"h": 17
+					},
+					"frame": {
+						"x": 521,
+						"y": 1,
+						"w": 18,
+						"h": 17
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-50",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 5,
+						"y": 4,
+						"w": 21,
+						"h": 17
+					},
+					"frame": {
+						"x": 541,
+						"y": 1,
+						"w": 21,
+						"h": 17
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-51",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 5,
+						"y": 4,
+						"w": 21,
+						"h": 17
+					},
+					"frame": {
+						"x": 564,
+						"y": 1,
+						"w": 21,
+						"h": 17
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-6",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 8,
+						"y": 4,
+						"w": 18,
+						"h": 17
+					},
+					"frame": {
+						"x": 587,
+						"y": 1,
+						"w": 18,
+						"h": 17
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-63",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 4,
+						"y": 4,
+						"w": 23,
+						"h": 17
+					},
+					"frame": {
+						"x": 607,
+						"y": 1,
+						"w": 23,
+						"h": 17
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-64",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 4,
+						"y": 4,
+						"w": 23,
+						"h": 17
+					},
+					"frame": {
+						"x": 632,
+						"y": 1,
+						"w": 23,
+						"h": 17
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-7",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 8,
+						"y": 4,
+						"w": 18,
+						"h": 17
+					},
+					"frame": {
+						"x": 657,
+						"y": 1,
+						"w": 18,
+						"h": 17
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-70",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 7,
+						"y": 4,
+						"w": 20,
+						"h": 17
+					},
+					"frame": {
+						"x": 677,
+						"y": 1,
+						"w": 20,
+						"h": 17
+					}
+				},
+				{
+					"filename": "capture-path/capture-path-end",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 6,
+						"h": 18
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 6,
+						"h": 18
+					},
+					"frame": {
+						"x": 699,
+						"y": 1,
+						"w": 6,
+						"h": 18
+					}
+				},
+				{
+					"filename": "capture-path/capture-path-middle",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 6,
+						"h": 18
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 6,
+						"h": 18
+					},
+					"frame": {
+						"x": 707,
+						"y": 1,
+						"w": 6,
+						"h": 18
+					}
+				},
+				{
+					"filename": "capture-path/capture-path-start",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 6,
+						"h": 18
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 6,
+						"h": 18
+					},
+					"frame": {
+						"x": 715,
+						"y": 1,
+						"w": 6,
+						"h": 18
+					}
+				},
+				{
+					"filename": "capture-path/capture-path",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 18,
+						"h": 18
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 18,
+						"h": 18
+					},
+					"frame": {
+						"x": 723,
+						"y": 1,
+						"w": 18,
+						"h": 18
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-10",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 8,
+						"y": 4,
+						"w": 19,
+						"h": 18
+					},
+					"frame": {
+						"x": 743,
+						"y": 1,
+						"w": 19,
+						"h": 18
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-16",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 8,
+						"y": 3,
+						"w": 19,
+						"h": 18
+					},
+					"frame": {
+						"x": 764,
+						"y": 1,
+						"w": 19,
+						"h": 18
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-44",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 8,
+						"y": 3,
+						"w": 18,
+						"h": 18
+					},
+					"frame": {
+						"x": 785,
+						"y": 1,
+						"w": 18,
+						"h": 18
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-45",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 7,
+						"y": 3,
+						"w": 19,
+						"h": 18
+					},
+					"frame": {
+						"x": 805,
+						"y": 1,
+						"w": 19,
+						"h": 18
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-61",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 4,
+						"y": 3,
+						"w": 23,
+						"h": 18
+					},
+					"frame": {
+						"x": 1,
+						"y": 21,
+						"w": 23,
+						"h": 18
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-62",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 4,
+						"y": 3,
+						"w": 23,
+						"h": 18
+					},
+					"frame": {
+						"x": 26,
+						"y": 21,
+						"w": 23,
+						"h": 18
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-65",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 4,
+						"y": 3,
+						"w": 23,
+						"h": 18
+					},
+					"frame": {
+						"x": 51,
+						"y": 21,
+						"w": 23,
+						"h": 18
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-66",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 6,
+						"y": 3,
+						"w": 21,
+						"h": 18
+					},
+					"frame": {
+						"x": 76,
+						"y": 21,
+						"w": 21,
+						"h": 18
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-67",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 6,
+						"y": 3,
+						"w": 20,
+						"h": 18
+					},
+					"frame": {
+						"x": 99,
+						"y": 21,
+						"w": 20,
+						"h": 18
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-69",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 7,
+						"y": 3,
+						"w": 20,
+						"h": 18
+					},
+					"frame": {
+						"x": 121,
+						"y": 21,
+						"w": 20,
+						"h": 18
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-8",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 8,
+						"y": 4,
+						"w": 18,
+						"h": 18
+					},
+					"frame": {
+						"x": 143,
+						"y": 21,
+						"w": 18,
+						"h": 18
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-9",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 7,
+						"y": 4,
+						"w": 19,
+						"h": 18
+					},
+					"frame": {
+						"x": 163,
+						"y": 21,
+						"w": 19,
+						"h": 18
+					}
+				},
+				{
+					"filename": "confetti/hexagon-2",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 25,
+						"h": 25
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 3,
+						"w": 23,
+						"h": 19
+					},
+					"frame": {
+						"x": 184,
+						"y": 21,
+						"w": 23,
+						"h": 19
+					}
+				},
+				{
+					"filename": "confetti/hexagon-3",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 25,
+						"h": 25
+					},
+					"spriteSourceSize": {
+						"x": 3,
+						"y": 3,
+						"w": 20,
+						"h": 19
+					},
+					"frame": {
+						"x": 209,
+						"y": 21,
+						"w": 20,
+						"h": 19
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-11",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 8,
+						"y": 4,
+						"w": 18,
+						"h": 19
+					},
+					"frame": {
+						"x": 231,
+						"y": 21,
+						"w": 18,
+						"h": 19
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-17",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 8,
+						"y": 3,
+						"w": 19,
+						"h": 19
+					},
+					"frame": {
+						"x": 251,
+						"y": 21,
+						"w": 19,
+						"h": 19
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-18",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 8,
+						"y": 3,
+						"w": 20,
+						"h": 19
+					},
+					"frame": {
+						"x": 272,
+						"y": 21,
+						"w": 20,
+						"h": 19
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-19",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 7,
+						"y": 3,
+						"w": 21,
+						"h": 19
+					},
+					"frame": {
+						"x": 294,
+						"y": 21,
+						"w": 21,
+						"h": 19
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-20",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 7,
+						"y": 3,
+						"w": 21,
+						"h": 19
+					},
+					"frame": {
+						"x": 317,
+						"y": 21,
+						"w": 21,
+						"h": 19
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-24",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 7,
+						"y": 2,
+						"w": 19,
+						"h": 19
+					},
+					"frame": {
+						"x": 340,
+						"y": 21,
+						"w": 19,
+						"h": 19
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-25",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 7,
+						"y": 2,
+						"w": 20,
+						"h": 19
+					},
+					"frame": {
+						"x": 361,
+						"y": 21,
+						"w": 20,
+						"h": 19
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-29",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 7,
+						"y": 3,
+						"w": 19,
+						"h": 19
+					},
+					"frame": {
+						"x": 383,
+						"y": 21,
+						"w": 19,
+						"h": 19
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-43",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 7,
+						"y": 4,
+						"w": 19,
+						"h": 19
+					},
+					"frame": {
+						"x": 404,
+						"y": 21,
+						"w": 19,
+						"h": 19
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-46",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 7,
+						"y": 2,
+						"w": 19,
+						"h": 19
+					},
+					"frame": {
+						"x": 425,
+						"y": 21,
+						"w": 19,
+						"h": 19
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-47",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 7,
+						"y": 2,
+						"w": 19,
+						"h": 19
+					},
+					"frame": {
+						"x": 446,
+						"y": 21,
+						"w": 19,
+						"h": 19
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-52",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 5,
+						"y": 3,
+						"w": 21,
+						"h": 19
+					},
+					"frame": {
+						"x": 467,
+						"y": 21,
+						"w": 21,
+						"h": 19
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-53",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 7,
+						"y": 3,
+						"w": 18,
+						"h": 19
+					},
+					"frame": {
+						"x": 490,
+						"y": 21,
+						"w": 18,
+						"h": 19
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-54",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 7,
+						"y": 3,
+						"w": 19,
+						"h": 19
+					},
+					"frame": {
+						"x": 510,
+						"y": 21,
+						"w": 19,
+						"h": 19
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-55",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 6,
+						"y": 2,
+						"w": 20,
+						"h": 19
+					},
+					"frame": {
+						"x": 531,
+						"y": 21,
+						"w": 20,
+						"h": 19
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-68",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 7,
+						"y": 2,
+						"w": 20,
+						"h": 19
+					},
+					"frame": {
+						"x": 553,
+						"y": 21,
+						"w": 20,
+						"h": 19
+					}
+				},
+				{
+					"filename": "bomb-explosion/bomb-explosion-0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 19,
+						"h": 20
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 19,
+						"h": 20
+					},
+					"frame": {
+						"x": 575,
+						"y": 21,
+						"w": 19,
+						"h": 20
+					}
+				},
+				{
+					"filename": "rocket-explosion/rocket-explosion-1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 19,
+						"h": 20
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 19,
+						"h": 20
+					},
+					"frame": {
+						"x": 596,
+						"y": 21,
+						"w": 19,
+						"h": 20
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-12",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 8,
+						"y": 3,
+						"w": 18,
+						"h": 20
+					},
+					"frame": {
+						"x": 617,
+						"y": 21,
+						"w": 18,
+						"h": 20
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-13",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 8,
+						"y": 3,
+						"w": 18,
+						"h": 20
+					},
+					"frame": {
+						"x": 637,
+						"y": 21,
+						"w": 18,
+						"h": 20
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-14",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 8,
+						"y": 3,
+						"w": 18,
+						"h": 20
+					},
+					"frame": {
+						"x": 657,
+						"y": 21,
+						"w": 18,
+						"h": 20
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-15",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 8,
+						"y": 3,
+						"w": 19,
+						"h": 20
+					},
+					"frame": {
+						"x": 677,
+						"y": 21,
+						"w": 19,
+						"h": 20
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-21",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 7,
+						"y": 2,
+						"w": 21,
+						"h": 20
+					},
+					"frame": {
+						"x": 698,
+						"y": 21,
+						"w": 21,
+						"h": 20
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-22",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 7,
+						"y": 2,
+						"w": 20,
+						"h": 20
+					},
+					"frame": {
+						"x": 721,
+						"y": 21,
+						"w": 20,
+						"h": 20
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-23",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 7,
+						"y": 2,
+						"w": 21,
+						"h": 20
+					},
+					"frame": {
+						"x": 743,
+						"y": 21,
+						"w": 21,
+						"h": 20
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-26",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 7,
+						"y": 1,
+						"w": 20,
+						"h": 20
+					},
+					"frame": {
+						"x": 766,
+						"y": 21,
+						"w": 20,
+						"h": 20
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-27",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 6,
+						"y": 1,
+						"w": 21,
+						"h": 20
+					},
+					"frame": {
+						"x": 788,
+						"y": 21,
+						"w": 21,
+						"h": 20
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-28",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 7,
+						"y": 1,
+						"w": 19,
+						"h": 20
+					},
+					"frame": {
+						"x": 811,
+						"y": 21,
+						"w": 19,
+						"h": 20
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-30",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 7,
+						"y": 2,
+						"w": 19,
+						"h": 20
+					},
+					"frame": {
+						"x": 1,
+						"y": 43,
+						"w": 19,
+						"h": 20
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-31",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 7,
+						"y": 2,
+						"w": 20,
+						"h": 20
+					},
+					"frame": {
+						"x": 22,
+						"y": 43,
+						"w": 20,
+						"h": 20
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-32",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 7,
+						"y": 2,
+						"w": 20,
+						"h": 20
+					},
+					"frame": {
+						"x": 44,
+						"y": 43,
+						"w": 20,
+						"h": 20
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-33",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 7,
+						"y": 2,
+						"w": 19,
+						"h": 20
+					},
+					"frame": {
+						"x": 66,
+						"y": 43,
+						"w": 19,
+						"h": 20
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-34",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 7,
+						"y": 2,
+						"w": 20,
+						"h": 20
+					},
+					"frame": {
+						"x": 87,
+						"y": 43,
+						"w": 20,
+						"h": 20
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-42",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 8,
+						"y": 3,
+						"w": 18,
+						"h": 20
+					},
+					"frame": {
+						"x": 109,
+						"y": 43,
+						"w": 18,
+						"h": 20
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-56",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 6,
+						"y": 2,
+						"w": 20,
+						"h": 20
+					},
+					"frame": {
+						"x": 129,
+						"y": 43,
+						"w": 20,
+						"h": 20
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-58",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 5,
+						"y": 1,
+						"w": 21,
+						"h": 20
+					},
+					"frame": {
+						"x": 151,
+						"y": 43,
+						"w": 21,
+						"h": 20
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-59",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 5,
+						"y": 1,
+						"w": 21,
+						"h": 20
+					},
+					"frame": {
+						"x": 174,
+						"y": 43,
+						"w": 21,
+						"h": 20
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-60",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 4,
+						"y": 1,
+						"w": 22,
+						"h": 20
+					},
+					"frame": {
+						"x": 197,
+						"y": 43,
+						"w": 22,
+						"h": 20
+					}
+				},
+				{
+					"filename": "confetti/hexagon-1",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 25,
+						"h": 25
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 2,
+						"w": 25,
+						"h": 21
+					},
+					"frame": {
+						"x": 221,
+						"y": 43,
+						"w": 25,
+						"h": 21
+					}
+				},
+				{
+					"filename": "polish-effect/polish-effect-0",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 54,
+						"h": 56
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 8,
+						"h": 21
+					},
+					"frame": {
+						"x": 248,
+						"y": 43,
+						"w": 8,
+						"h": 21
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-35",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 8,
+						"y": 2,
+						"w": 19,
+						"h": 21
+					},
+					"frame": {
+						"x": 258,
+						"y": 43,
+						"w": 19,
+						"h": 21
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-57",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 5,
+						"y": 1,
+						"w": 21,
+						"h": 21
+					},
+					"frame": {
+						"x": 279,
+						"y": 43,
+						"w": 21,
+						"h": 21
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-36",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 8,
+						"y": 1,
+						"w": 17,
+						"h": 22
+					},
+					"frame": {
+						"x": 302,
+						"y": 43,
+						"w": 17,
+						"h": 22
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-37",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 7,
+						"y": 1,
+						"w": 18,
+						"h": 22
+					},
+					"frame": {
+						"x": 321,
+						"y": 43,
+						"w": 18,
+						"h": 22
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-38",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 7,
+						"y": 1,
+						"w": 19,
+						"h": 22
+					},
+					"frame": {
+						"x": 341,
+						"y": 43,
+						"w": 19,
+						"h": 22
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-39",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 7,
+						"y": 1,
+						"w": 19,
+						"h": 22
+					},
+					"frame": {
+						"x": 362,
+						"y": 43,
+						"w": 19,
+						"h": 22
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-40",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 7,
+						"y": 1,
+						"w": 19,
+						"h": 22
+					},
+					"frame": {
+						"x": 383,
+						"y": 43,
+						"w": 19,
+						"h": 22
+					}
+				},
+				{
+					"filename": "rocket-tail-effect/fire-explosive-41",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 8,
+						"y": 1,
+						"w": 18,
+						"h": 22
+					},
+					"frame": {
+						"x": 404,
+						"y": 43,
+						"w": 18,
+						"h": 22
+					}
+				},
+				{
+					"filename": "confetti/hexagon-4",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 25,
+						"h": 25
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 1,
+						"w": 23,
+						"h": 23
+					},
+					"frame": {
+						"x": 424,
+						"y": 43,
+						"w": 23,
+						"h": 23
+					}
+				},
+				{
+					"filename": "bomb-defuse/bomb-defuse-1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 28,
+						"h": 24
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 28,
+						"h": 24
+					},
+					"frame": {
+						"x": 449,
+						"y": 43,
+						"w": 28,
+						"h": 24
+					}
+				},
+				{
+					"filename": "confetti/hexagon-0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 25,
+						"h": 25
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 25,
+						"h": 25
+					},
+					"frame": {
+						"x": 479,
+						"y": 43,
+						"w": 25,
+						"h": 25
+					}
+				},
+				{
+					"filename": "star-white",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
 						"w": 35,
-						"h": 39
+						"h": 35
+					},
+					"spriteSourceSize": {
+						"x": 5,
+						"y": 4,
+						"w": 23,
+						"h": 25
+					},
+					"frame": {
+						"x": 506,
+						"y": 43,
+						"w": 23,
+						"h": 25
+					}
+				},
+				{
+					"filename": "bomb-explosion/bomb-explosion-1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 30,
+						"h": 30
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 30,
+						"h": 30
+					},
+					"frame": {
+						"x": 531,
+						"y": 43,
+						"w": 30,
+						"h": 30
+					}
+				},
+				{
+					"filename": "rocket-explosion/rocket-explosion-2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 32
+					},
+					"frame": {
+						"x": 563,
+						"y": 43,
+						"w": 32,
+						"h": 32
+					}
+				},
+				{
+					"filename": "bomb-defuse/bomb-defuse-2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 42,
+						"h": 34
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 42,
+						"h": 34
+					},
+					"frame": {
+						"x": 597,
+						"y": 43,
+						"w": 42,
+						"h": 34
+					}
+				},
+				{
+					"filename": "bomb-explosion/bomb-explosion-2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 38,
+						"h": 35
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 38,
+						"h": 35
+					},
+					"frame": {
+						"x": 641,
+						"y": 43,
+						"w": 38,
+						"h": 35
+					}
+				},
+				{
+					"filename": "star-yellow-dark",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 35,
+						"h": 35
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 35,
+						"h": 35
+					},
+					"frame": {
+						"x": 681,
+						"y": 43,
+						"w": 35,
+						"h": 35
 					}
 				},
 				{
@@ -759,10 +2544,1648 @@
 						"h": 35
 					},
 					"frame": {
-						"x": 207,
-						"y": 300,
+						"x": 718,
+						"y": 43,
 						"w": 35,
 						"h": 35
+					}
+				},
+				{
+					"filename": "polish-effect/polish-effect-5",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 54,
+						"h": 56
+					},
+					"spriteSourceSize": {
+						"x": 41,
+						"y": 18,
+						"w": 13,
+						"h": 38
+					},
+					"frame": {
+						"x": 755,
+						"y": 43,
+						"w": 13,
+						"h": 38
+					}
+				},
+				{
+					"filename": "rocket-explosion/rocket-explosion-5",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 54,
+						"h": 38
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 54,
+						"h": 38
+					},
+					"frame": {
+						"x": 770,
+						"y": 43,
+						"w": 54,
+						"h": 38
+					}
+				},
+				{
+					"filename": "comet-dark",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 40,
+						"h": 40
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 0,
+						"w": 35,
+						"h": 39
+					},
+					"frame": {
+						"x": 1,
+						"y": 83,
+						"w": 35,
+						"h": 39
+					}
+				},
+				{
+					"filename": "comet",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 40,
+						"h": 40
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 0,
+						"w": 35,
+						"h": 39
+					},
+					"frame": {
+						"x": 38,
+						"y": 83,
+						"w": 35,
+						"h": 39
+					}
+				},
+				{
+					"filename": "rocket-explosion/rocket-explosion-3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 54,
+						"h": 39
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 54,
+						"h": 39
+					},
+					"frame": {
+						"x": 75,
+						"y": 83,
+						"w": 54,
+						"h": 39
+					}
+				},
+				{
+					"filename": "big-rocket-tail-effect/white-smoke",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 48,
+						"h": 40
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 48,
+						"h": 40
+					},
+					"frame": {
+						"x": 131,
+						"y": 83,
+						"w": 48,
+						"h": 40
+					}
+				},
+				{
+					"filename": "bomb-defuse/bomb-defuse-3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 48,
+						"h": 42
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 48,
+						"h": 42
+					},
+					"frame": {
+						"x": 181,
+						"y": 83,
+						"w": 48,
+						"h": 42
+					}
+				},
+				{
+					"filename": "rocket-explosion/rocket-explosion-8",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 62,
+						"h": 43
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 62,
+						"h": 43
+					},
+					"frame": {
+						"x": 231,
+						"y": 83,
+						"w": 62,
+						"h": 43
+					}
+				},
+				{
+					"filename": "rocket-explosion/rocket-explosion-4",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 56,
+						"h": 49
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 56,
+						"h": 49
+					},
+					"frame": {
+						"x": 295,
+						"y": 83,
+						"w": 56,
+						"h": 49
+					}
+				},
+				{
+					"filename": "blank",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 50,
+						"h": 50
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 50,
+						"h": 50
+					},
+					"frame": {
+						"x": 353,
+						"y": 83,
+						"w": 50,
+						"h": 50
+					}
+				},
+				{
+					"filename": "bomb-defuse/bomb-defuse-5",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 58,
+						"h": 50
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 58,
+						"h": 50
+					},
+					"frame": {
+						"x": 405,
+						"y": 83,
+						"w": 58,
+						"h": 50
+					}
+				},
+				{
+					"filename": "bomb-defuse/bomb-defuse-4",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 54,
+						"h": 53
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 54,
+						"h": 53
+					},
+					"frame": {
+						"x": 465,
+						"y": 83,
+						"w": 54,
+						"h": 53
+					}
+				},
+				{
+					"filename": "bomb-explosion/bomb-explosion-7",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 56,
+						"h": 53
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 56,
+						"h": 53
+					},
+					"frame": {
+						"x": 521,
+						"y": 83,
+						"w": 56,
+						"h": 53
+					}
+				},
+				{
+					"filename": "rocket-explosion/rocket-explosion-7",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 71,
+						"h": 53
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 71,
+						"h": 53
+					},
+					"frame": {
+						"x": 579,
+						"y": 83,
+						"w": 71,
+						"h": 53
+					}
+				},
+				{
+					"filename": "texts/unbelievable",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 206,
+						"h": 53
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 206,
+						"h": 53
+					},
+					"frame": {
+						"x": 1,
+						"y": 138,
+						"w": 206,
+						"h": 53
+					}
+				},
+				{
+					"filename": "bomb-explosion/bomb-explosion-8",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 60,
+						"h": 54
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 60,
+						"h": 54
+					},
+					"frame": {
+						"x": 209,
+						"y": 138,
+						"w": 60,
+						"h": 54
+					}
+				},
+				{
+					"filename": "rocket-explosion/rocket-explosion-6",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 72,
+						"h": 54
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 72,
+						"h": 54
+					},
+					"frame": {
+						"x": 271,
+						"y": 138,
+						"w": 72,
+						"h": 54
+					}
+				},
+				{
+					"filename": "texts/excellent",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 167,
+						"h": 54
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 167,
+						"h": 54
+					},
+					"frame": {
+						"x": 345,
+						"y": 138,
+						"w": 167,
+						"h": 54
+					}
+				},
+				{
+					"filename": "texts/russian/great-ru",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 151,
+						"h": 55
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 151,
+						"h": 55
+					},
+					"frame": {
+						"x": 514,
+						"y": 138,
+						"w": 151,
+						"h": 55
+					}
+				},
+				{
+					"filename": "texts/turkish/great-tr",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 143,
+						"h": 55
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 143,
+						"h": 55
+					},
+					"frame": {
+						"x": 667,
+						"y": 138,
+						"w": 143,
+						"h": 55
+					}
+				},
+				{
+					"filename": "bomb-explosion/bomb-explosion-6",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 59,
+						"h": 56
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 59,
+						"h": 56
+					},
+					"frame": {
+						"x": 1,
+						"y": 195,
+						"w": 59,
+						"h": 56
+					}
+				},
+				{
+					"filename": "polish-effect/polish-effect-1",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 54,
+						"h": 56
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 23,
+						"h": 56
+					},
+					"frame": {
+						"x": 62,
+						"y": 195,
+						"w": 23,
+						"h": 56
+					}
+				},
+				{
+					"filename": "polish-effect/polish-effect-2",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 54,
+						"h": 56
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 38,
+						"h": 56
+					},
+					"frame": {
+						"x": 87,
+						"y": 195,
+						"w": 38,
+						"h": 56
+					}
+				},
+				{
+					"filename": "polish-effect/polish-effect-3",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 54,
+						"h": 56
+					},
+					"spriteSourceSize": {
+						"x": 11,
+						"y": 0,
+						"w": 42,
+						"h": 56
+					},
+					"frame": {
+						"x": 127,
+						"y": 195,
+						"w": 42,
+						"h": 56
+					}
+				},
+				{
+					"filename": "polish-effect/polish-effect-4",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 54,
+						"h": 56
+					},
+					"spriteSourceSize": {
+						"x": 26,
+						"y": 0,
+						"w": 28,
+						"h": 56
+					},
+					"frame": {
+						"x": 171,
+						"y": 195,
+						"w": 28,
+						"h": 56
+					}
+				},
+				{
+					"filename": "texts/french/excellent-fr",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 195,
+						"h": 56
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 195,
+						"h": 56
+					},
+					"frame": {
+						"x": 201,
+						"y": 195,
+						"w": 195,
+						"h": 56
+					}
+				},
+				{
+					"filename": "texts/french/good-fr",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 100,
+						"h": 56
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 100,
+						"h": 56
+					},
+					"frame": {
+						"x": 398,
+						"y": 195,
+						"w": 100,
+						"h": 56
+					}
+				},
+				{
+					"filename": "texts/french/great-fr",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 127,
+						"h": 56
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 127,
+						"h": 56
+					},
+					"frame": {
+						"x": 500,
+						"y": 195,
+						"w": 127,
+						"h": 56
+					}
+				},
+				{
+					"filename": "texts/french/unbelievable-fr",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 213,
+						"h": 56
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 213,
+						"h": 56
+					},
+					"frame": {
+						"x": 629,
+						"y": 195,
+						"w": 213,
+						"h": 56
+					}
+				},
+				{
+					"filename": "texts/german/excellent-de",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 267,
+						"h": 56
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 267,
+						"h": 56
+					},
+					"frame": {
+						"x": 1,
+						"y": 253,
+						"w": 267,
+						"h": 56
+					}
+				},
+				{
+					"filename": "texts/german/unbelievable-de",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 236,
+						"h": 56
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 236,
+						"h": 56
+					},
+					"frame": {
+						"x": 270,
+						"y": 253,
+						"w": 236,
+						"h": 56
+					}
+				},
+				{
+					"filename": "texts/italian/excellent-it",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 214,
+						"h": 56
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 214,
+						"h": 56
+					},
+					"frame": {
+						"x": 508,
+						"y": 253,
+						"w": 214,
+						"h": 56
+					}
+				},
+				{
+					"filename": "texts/italian/good-it",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 108,
+						"h": 56
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 108,
+						"h": 56
+					},
+					"frame": {
+						"x": 724,
+						"y": 253,
+						"w": 108,
+						"h": 56
+					}
+				},
+				{
+					"filename": "texts/italian/great-it",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 150,
+						"h": 56
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 150,
+						"h": 56
+					},
+					"frame": {
+						"x": 1,
+						"y": 311,
+						"w": 150,
+						"h": 56
+					}
+				},
+				{
+					"filename": "texts/italian/unbelievable-it",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 212,
+						"h": 56
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 212,
+						"h": 56
+					},
+					"frame": {
+						"x": 153,
+						"y": 311,
+						"w": 212,
+						"h": 56
+					}
+				},
+				{
+					"filename": "texts/portuguese/excellent-pt",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 196,
+						"h": 56
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 196,
+						"h": 56
+					},
+					"frame": {
+						"x": 367,
+						"y": 311,
+						"w": 196,
+						"h": 56
+					}
+				},
+				{
+					"filename": "texts/spanish/good-es",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 100,
+						"h": 56
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 100,
+						"h": 56
+					},
+					"frame": {
+						"x": 565,
+						"y": 311,
+						"w": 100,
+						"h": 56
+					}
+				},
+				{
+					"filename": "texts/spanish/great-es",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 138,
+						"h": 56
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 138,
+						"h": 56
+					},
+					"frame": {
+						"x": 667,
+						"y": 311,
+						"w": 138,
+						"h": 56
+					}
+				},
+				{
+					"filename": "texts/german/good-de",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 93,
+						"h": 57
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 93,
+						"h": 57
+					},
+					"frame": {
+						"x": 1,
+						"y": 369,
+						"w": 93,
+						"h": 57
+					}
+				},
+				{
+					"filename": "texts/german/great-de",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 198,
+						"h": 57
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 198,
+						"h": 57
+					},
+					"frame": {
+						"x": 96,
+						"y": 369,
+						"w": 198,
+						"h": 57
+					}
+				},
+				{
+					"filename": "texts/portuguese/good-pt",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 94,
+						"h": 57
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 94,
+						"h": 57
+					},
+					"frame": {
+						"x": 296,
+						"y": 369,
+						"w": 94,
+						"h": 57
+					}
+				},
+				{
+					"filename": "texts/great",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 129,
+						"h": 58
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 129,
+						"h": 58
+					},
+					"frame": {
+						"x": 392,
+						"y": 369,
+						"w": 129,
+						"h": 58
+					}
+				},
+				{
+					"filename": "texts/indonesian/excellent-id",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 170,
+						"h": 58
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 170,
+						"h": 58
+					},
+					"frame": {
+						"x": 523,
+						"y": 369,
+						"w": 170,
+						"h": 58
+					}
+				},
+				{
+					"filename": "texts/indonesian/great-id",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 114,
+						"h": 58
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 114,
+						"h": 58
+					},
+					"frame": {
+						"x": 695,
+						"y": 369,
+						"w": 114,
+						"h": 58
+					}
+				},
+				{
+					"filename": "texts/chinese/excellent-zh",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 108,
+						"h": 59
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 108,
+						"h": 59
+					},
+					"frame": {
+						"x": 1,
+						"y": 429,
+						"w": 108,
+						"h": 59
+					}
+				},
+				{
+					"filename": "texts/chinese/great-zh",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 84,
+						"h": 59
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 84,
+						"h": 59
+					},
+					"frame": {
+						"x": 111,
+						"y": 429,
+						"w": 84,
+						"h": 59
+					}
+				},
+				{
+					"filename": "texts/chinese/unbelievable-zh",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 137,
+						"h": 59
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 137,
+						"h": 59
+					},
+					"frame": {
+						"x": 197,
+						"y": 429,
+						"w": 137,
+						"h": 59
+					}
+				},
+				{
+					"filename": "texts/chinese/good-zh",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 88,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 88,
+						"h": 60
+					},
+					"frame": {
+						"x": 336,
+						"y": 429,
+						"w": 88,
+						"h": 60
+					}
+				},
+				{
+					"filename": "texts/good",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 129,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 129,
+						"h": 60
+					},
+					"frame": {
+						"x": 426,
+						"y": 429,
+						"w": 129,
+						"h": 60
+					}
+				},
+				{
+					"filename": "texts/turkish/excellent-tr",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 200,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 200,
+						"h": 60
+					},
+					"frame": {
+						"x": 557,
+						"y": 429,
+						"w": 200,
+						"h": 60
+					}
+				},
+				{
+					"filename": "texts/turkish/unbelievable-tr",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 196,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 196,
+						"h": 60
+					},
+					"frame": {
+						"x": 1,
+						"y": 491,
+						"w": 196,
+						"h": 60
+					}
+				},
+				{
+					"filename": "bomb-explosion/bomb-explosion-3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 74,
+						"h": 61
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 74,
+						"h": 61
+					},
+					"frame": {
+						"x": 199,
+						"y": 491,
+						"w": 74,
+						"h": 61
+					}
+				},
+				{
+					"filename": "bomb-explosion/bomb-explosion-5",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 61
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 61
+					},
+					"frame": {
+						"x": 275,
+						"y": 491,
+						"w": 70,
+						"h": 61
+					}
+				},
+				{
+					"filename": "texts/japanese/unbelievable-ja",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 192,
+						"h": 61
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 192,
+						"h": 61
+					},
+					"frame": {
+						"x": 347,
+						"y": 491,
+						"w": 192,
+						"h": 61
+					}
+				},
+				{
+					"filename": "texts/portuguese/great-pt",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 148,
+						"h": 61
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 148,
+						"h": 61
+					},
+					"frame": {
+						"x": 541,
+						"y": 491,
+						"w": 148,
+						"h": 61
+					}
+				},
+				{
+					"filename": "texts/portuguese/unbelievable-pt",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 259,
+						"h": 61
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 259,
+						"h": 61
+					},
+					"frame": {
+						"x": 1,
+						"y": 554,
+						"w": 259,
+						"h": 61
+					}
+				},
+				{
+					"filename": "texts/russian/excellent-ru",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 215,
+						"h": 61
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 215,
+						"h": 61
+					},
+					"frame": {
+						"x": 262,
+						"y": 554,
+						"w": 215,
+						"h": 61
+					}
+				},
+				{
+					"filename": "texts/russian/unbelievable-ru",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 197,
+						"h": 61
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 197,
+						"h": 61
+					},
+					"frame": {
+						"x": 479,
+						"y": 554,
+						"w": 197,
+						"h": 61
+					}
+				},
+				{
+					"filename": "texts/spanish/excellent-es",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 213,
+						"h": 61
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 213,
+						"h": 61
+					},
+					"frame": {
+						"x": 1,
+						"y": 617,
+						"w": 213,
+						"h": 61
+					}
+				},
+				{
+					"filename": "texts/spanish/unbelievable-es",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 182,
+						"h": 61
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 182,
+						"h": 61
+					},
+					"frame": {
+						"x": 216,
+						"y": 617,
+						"w": 182,
+						"h": 61
+					}
+				},
+				{
+					"filename": "texts/turkish/good-tr",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 61
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 61
+					},
+					"frame": {
+						"x": 400,
+						"y": 617,
+						"w": 70,
+						"h": 61
+					}
+				},
+				{
+					"filename": "texts/japanese/excellent-ja",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 164,
+						"h": 62
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 164,
+						"h": 62
+					},
+					"frame": {
+						"x": 472,
+						"y": 617,
+						"w": 164,
+						"h": 62
+					}
+				},
+				{
+					"filename": "texts/japanese/good-ja",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 107,
+						"h": 62
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 107,
+						"h": 62
+					},
+					"frame": {
+						"x": 638,
+						"y": 617,
+						"w": 107,
+						"h": 62
+					}
+				},
+				{
+					"filename": "texts/japanese/great-ja",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 89,
+						"h": 62
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 89,
+						"h": 62
+					},
+					"frame": {
+						"x": 747,
+						"y": 617,
+						"w": 89,
+						"h": 62
+					}
+				},
+				{
+					"filename": "texts/indonesian/good-id",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 115,
+						"h": 63
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 115,
+						"h": 63
+					},
+					"frame": {
+						"x": 1,
+						"y": 681,
+						"w": 115,
+						"h": 63
+					}
+				},
+				{
+					"filename": "bomb-defuse/bomb-defuse-7",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 69,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 69,
+						"h": 64
+					},
+					"frame": {
+						"x": 118,
+						"y": 681,
+						"w": 69,
+						"h": 64
+					}
+				},
+				{
+					"filename": "hint-glow",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 63,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 63,
+						"h": 64
+					},
+					"frame": {
+						"x": 189,
+						"y": 681,
+						"w": 63,
+						"h": 64
+					}
+				},
+				{
+					"filename": "texts/indonesian/unbelievable-id",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 142,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 142,
+						"h": 64
+					},
+					"frame": {
+						"x": 254,
+						"y": 681,
+						"w": 142,
+						"h": 64
+					}
+				},
+				{
+					"filename": "texts/russian/good-ru",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 162,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 162,
+						"h": 64
+					},
+					"frame": {
+						"x": 398,
+						"y": 681,
+						"w": 162,
+						"h": 64
+					}
+				},
+				{
+					"filename": "texts/excellent-light",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 138,
+						"h": 66
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 138,
+						"h": 66
+					},
+					"frame": {
+						"x": 562,
+						"y": 681,
+						"w": 138,
+						"h": 66
+					}
+				},
+				{
+					"filename": "texts/great-light",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 137,
+						"h": 66
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 137,
+						"h": 66
+					},
+					"frame": {
+						"x": 702,
+						"y": 681,
+						"w": 137,
+						"h": 66
+					}
+				},
+				{
+					"filename": "texts/unbelievable-light",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 134,
+						"h": 66
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 134,
+						"h": 66
+					},
+					"frame": {
+						"x": 1,
+						"y": 749,
+						"w": 134,
+						"h": 66
+					}
+				},
+				{
+					"filename": "bomb-defuse/bomb-defuse-8",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 65,
+						"h": 67
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 65,
+						"h": 67
+					},
+					"frame": {
+						"x": 137,
+						"y": 749,
+						"w": 65,
+						"h": 67
+					}
+				},
+				{
+					"filename": "texts/good-light",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 137,
+						"h": 67
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 137,
+						"h": 67
+					},
+					"frame": {
+						"x": 204,
+						"y": 749,
+						"w": 137,
+						"h": 67
+					}
+				},
+				{
+					"filename": "bomb-defuse/bomb-defuse-6",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 70,
+						"h": 69
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 70,
+						"h": 69
+					},
+					"frame": {
+						"x": 343,
+						"y": 749,
+						"w": 70,
+						"h": 69
+					}
+				},
+				{
+					"filename": "bomb-explosion/bomb-explosion-4",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 77,
+						"h": 69
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 77,
+						"h": 69
+					},
+					"frame": {
+						"x": 415,
+						"y": 749,
+						"w": 77,
+						"h": 69
+					}
+				},
+				{
+					"filename": "big-rocket-tail-effect/yellow-smoke",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 72,
+						"h": 72
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 72,
+						"h": 72
+					},
+					"frame": {
+						"x": 494,
+						"y": 749,
+						"w": 72,
+						"h": 72
+					}
+				},
+				{
+					"filename": "circle",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 81,
+						"h": 81
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 81,
+						"h": 81
+					},
+					"frame": {
+						"x": 568,
+						"y": 749,
+						"w": 81,
+						"h": 81
 					}
 				}
 			]
@@ -771,6 +4194,6 @@
 	"meta": {
 		"app": "https://www.codeandweb.com/texturepacker",
 		"version": "3.0",
-		"smartupdate": "$TexturePacker:SmartUpdate:e7818739929ca3075149899622d1e6bf:f3b900bcd97315c0a5de04cfa7acbd8d:fcf0ca429d8c303c4783c89b34559bdb$"
+		"smartupdate": "$TexturePacker:SmartUpdate:6454a13ea609ccb85774ac333421f37e:fa465bed057fc4e0b3cff962e5fdc2ae:0e554d0a20193f8e0b06bdb704999cfa$"
 	}
 }

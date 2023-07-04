@@ -1,3 +1,13 @@
+function initGlobalVars() {
+    // Set variables scope from window object
+    if (!window.__GLANCE_ENV.BUNDLED) return
+
+    /* eslint-disable no-undef */
+    window.isLoadingScreenFaded = false
+}
+
+initGlobalVars()
+
 const isBumperAd = typeof BumperAd !== 'undefined' ? true : false
 const isSdkNew = typeof GlanceAndroidInterface !== 'undefined' ? true : false
 
@@ -185,10 +195,15 @@ function goToGame(setTimeoutSeconds = 0) {
     })
 
     if (!isNormalGame) {
+        window.isLoadingScreenFaded = true
         gameReady()
     } else {
         setTimeout(() => {
             $('#loaderPage').fadeOut('slow')
+            setTimeout(() => {
+                //Tell the game the transition is finished
+                window.isLoadingScreenFaded = true
+            }, 300)
         }, setTimeoutSeconds)
     }
 }
