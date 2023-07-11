@@ -1,16 +1,39 @@
 //? override sdk
 const gameName = window.__GLANCE_ENV.GAME_NAME
-window.gameName = gameName
 const publisherName = window.__GLANCE_ENV.PUBLISHER_NAME
-const pageName = `${gameName}_${publisherName}`
-const categoryName = publisherName
-const baseAdUnitName = `${publisherName}_${gameName}`
+window.gameName = gameName
 
 const gameInput = { gameName, publisherName }
-window.gameInput = gameInput
 
+var queryParams = location.search.substring(1)?.split('&')
+var isTestModeOn =
+    queryParams
+        .find((a) => {
+            return a.startsWith('mode')
+        })
+        ?.split('=')[1]
+        .toLowerCase() === 'test'
+        ? true
+        : false
+var gpID = queryParams
+    .find((a) => {
+        return a.startsWith('gpid')
+    })
+    ?.split('=')[1]
+
+if (isTestModeOn) {
+    gameInput['surface'] = 'test'
+}
+
+function progressBar(percentage) {
+    console.log('Loading Bar :', percentage)
+}
+
+function sendCustomAnalyticsEvent(eventType, extras) {
+    console.log('AnalyticsEvent', eventType, extras)
+}
 //loading scripts
-$.getScript('https://g.glance-cdn.com/public/content/games/xiaomi/gamesAd.js', 'gpid.js')
+$.getScript('https://g.glance-cdn.com/public/content/games/xiaomi/gamesAd.js')
     .done(function (script, textStatus) {
         console.log(textStatus)
         window.GlanceGamingAdInterface.setupLibrary(gameInput, successCb, failCb)
@@ -31,12 +54,14 @@ var is_rewarded_noFill = false
 var isRewardGranted = false
 var isRewardedAdClosedByUser = false
 
+var pageName = `${gameInput.publisherName}_${gameInput.gameName}`
+var categoryName = isTestModeOn ? 'google' : `${gameInput.publisherName}`
 // Objects for different ad format.
-const LPMercObj = {
-    adUnitName: `${baseAdUnitName}_Gameload_Top`,
+var LPMercObj = {
+    adUnitName: `${gameInput.publisherName}_${gameInput.gameName}_Gameload_Bottom`,
     pageName, //Game Name
     categoryName, //Publisher Name
-    placementName: 'Gameload',
+    placementName: isTestModeOn ? 'Test_Banner' : 'Gameload',
     containerID: 'div-gpt-ad-2', //Div Id for banner
     height: 250,
     width: 300,
@@ -44,13 +69,11 @@ const LPMercObj = {
     yc: '3.0',
     gpid: gpID,
 }
-window.LPMercObj = LPMercObj
-
-const StickyObj = {
-    adUnitName: `${baseAdUnitName}_Ingame_Bottom`,
+var StickyObj = {
+    adUnitName: `${gameInput.publisherName}_${gameInput.gameName}_Ingame_Bottom`,
     pageName, //Game Name
     categoryName, //Publisher Name
-    placementName: 'Ingame',
+    placementName: isTestModeOn ? 'Test_Banner' : 'Ingame',
     containerID: 'banner-ad', //Div Id for banner
     height: 50,
     width: 320,
@@ -58,13 +81,12 @@ const StickyObj = {
     yc: '3.0',
     gpid: gpID,
 }
-window.StickyObj = StickyObj
 
-const LBBannerObj = {
-    adUnitName: `${baseAdUnitName}_Leaderboard_Bottom`,
+var LBBannerObj = {
+    adUnitName: `${gameInput.publisherName}_${gameInput.gameName}_Leaderboard_Top`,
     pageName, //Game Name
     categoryName, //Publisher Name
-    placementName: 'Leaderboard',
+    placementName: isTestModeOn ? 'Test_Banner' : 'Leaderboard',
     containerID: 'div-gpt-ad-1', //Div Id for banner
     height: 250,
     width: 300,
@@ -72,12 +94,10 @@ const LBBannerObj = {
     yc: '3.0',
     gpid: gpID,
 }
-window.LBBannerObj = LBBannerObj
 
 function successCb() {
     console.log('set up lib success')
-    window.showBumperAd()
-
+    if (window.showBumperAd) window.showBumperAd()
     window.isAdSDKLoaded = true
 }
 
@@ -89,9 +109,9 @@ function failCb(reason) {
 
 window.isAdSDKLoaded = false
 
-const replayObj = {
-    adUnitName: `${baseAdUnitName}_FsReplay_Replay`,
-    placementName: 'FsReplay',
+var replayObj = {
+    adUnitName: `${gameInput.publisherName}_${gameInput.gameName}_FsReplay_Replay`,
+    placementName: isTestModeOn ? 'Test_Replay' : 'FsReplay',
     pageName, //Game Name
     categoryName, //Publisher Name
     containerID: '',
@@ -103,9 +123,9 @@ const replayObj = {
 }
 window.replayObj = replayObj
 
-const rewardObj = {
-    adUnitName: `${baseAdUnitName}_FsRewarded_Rewarded`,
-    placementName: 'FsRewarded',
+var rewardObj = {
+    adUnitName: `${gameInput.publisherName}_${gameInput.gameName}_FsRewarded_Reward`,
+    placementName: isTestModeOn ? 'Test_Rewarded' : 'FsRewarded',
     pageName, //Game Name
     categoryName, //Publisher Name
     containerID: '',
