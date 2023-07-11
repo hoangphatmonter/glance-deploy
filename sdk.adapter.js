@@ -30,8 +30,6 @@ var ad_reward_load_reject = null
 var ad_replay_load_resolve = null
 var ad_replay_load_reject = null
 
-var leaderboard_callback = null
-
 // ? Backup original function
 var originReplayEvent = window.replayEvent
 
@@ -41,11 +39,11 @@ var originReplayEvent = window.replayEvent
 window.replayEvent = function () {
     // ! Temporarily disable on v2 final 1.0.0
     // If leaderboard is open, close it, and show replay ad after leaderboard is closed
-    if (leaderboard_callback) {
+    if (window.leaderboard_callback) {
         console.log('Leaderboard is open, close it and show replay ad after leaderboard is closed')
         window.showGame()
-        var callback = leaderboard_callback
-        leaderboard_callback = null
+        var callback = window.leaderboard_callback
+        window.leaderboard_callback = null
         callback()
         return
     }
@@ -339,6 +337,10 @@ window.handleRewardedFail = function handleRewardedFail() {
 
 window.handleRewardedSuccess = function handleRewardedSuccess() {
     console.warn('handleRewardedSuccess: method is not implemented')
+}
+
+window.gotoLevel = function gotoLevel(_level) {
+    console.warn('gotoLevel: method is not implemented')
 }
 
 window.enableSound = function enableSound(_enable) {
@@ -729,18 +731,7 @@ const sdkFakeFBInstant = {
         return langCode + '_VN'
     },
     initializeAsync: function initializeAsync() {
-        window.addLoader()
-
         let fakeName = localStorage.getItem('randomUserName')
-
-        if ('addLeaderBoard' in window) {
-            window.addLeaderBoard()
-
-            if (!fakeName) {
-                fakeName = window.faker.name.findName()
-                localStorage.setItem('randomUserName', fakeName)
-            }
-        }
 
         playersData = [
             {
@@ -1009,14 +1000,6 @@ const sdkFakeFBInstant = {
     hideBannerAdAsync: function hideBannerAdAsync() {
         hideStickyBannerAd()
         return true
-    },
-    /**
-     * Remember to call hideLeaderBoard in replayCallback
-     */
-    // ! Temporarily disable on v2 final 1.0.0
-    showLeaderBoard: function showLeaderBoard(score, replayCallback) {
-        leaderboard_callback = replayCallback
-        return window.showLeaderBoard(score)
     },
     matchPlayerAsync: function matchPlayerAsync() {
         return Promise.reject()
