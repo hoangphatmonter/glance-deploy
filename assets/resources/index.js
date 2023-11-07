@@ -1,8 +1,4 @@
-System.register("chunks:///resources.js", [], function () {
-  return {
-    execute: function () {}
-  };
-});
+System.register("chunks:///resources.js",[],(function(){return{execute:function(){}}}));
 
 (function(r) {
   r('virtual:///prerequisite-imports/resources', 'chunks:///resources.js'); 
@@ -22,4 +18,3 @@ System.register("chunks:///resources.js", [], function () {
     };
     });
 });
-//# sourceMappingURL=index.js.map
