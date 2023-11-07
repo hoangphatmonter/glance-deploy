@@ -1,8 +1,217 @@
-(function () {var K=Object.defineProperty;var te=(r,e,t)=>e in r?K(r,e,{enumerable:!0,configurable:!0,writable:!0,value:t}):r[e]=t;var u=(r,e)=>()=>(r&&(e=r(r=0)),e);var g=(r,e)=>{for(var t in e)K(r,t,{get:e[t],enumerable:!0})};var o=(r,e,t)=>(te(r,typeof e!="symbol"?e+"":e,t),t);var a=u(()=>{});var N={};g(N,{default:()=>ie});var E,ie,H=u(()=>{"use strict";a();E=class{constructor(){o(this,"popup");o(this,"title");o(this,"chooseButton");o(this,"closeButton");o(this,"onChoose",e=>{this.chooseButton.addEventListener("click",()=>{e(),this.hide()},{once:!0})});o(this,"onClose",e=>{this.closeButton.addEventListener("click",()=>{e(),this.hide()},{once:!0})});this.popup=document.createElement("div"),this.popup.classList.add("popup"),this.popup.classList.add("dark-mode"),this.title=document.createElement("h2"),this.title.textContent="Choose Async",this.popup.appendChild(this.title),this.chooseButton=document.createElement("button"),this.chooseButton.textContent="Choose",this.popup.appendChild(this.chooseButton),this.closeButton=document.createElement("button"),this.closeButton.textContent="Close",this.popup.appendChild(this.closeButton)}show(){document.body.appendChild(this.popup)}hide(){document.body.removeChild(this.popup)}},ie=E});var U={};g(U,{default:()=>re});var w,re,j=u(()=>{"use strict";a();w=class{constructor(){o(this,"popup");o(this,"title");o(this,"switchButton");o(this,"closeButton");o(this,"onSwitch",e=>{this.switchButton.addEventListener("click",()=>{e(),this.hide()},{once:!0})});o(this,"onClose",e=>{this.closeButton.addEventListener("click",()=>{e(),this.hide()},{once:!0})});this.popup=document.createElement("div"),this.popup.classList.add("popup"),this.popup.classList.add("dark-mode"),this.title=document.createElement("h2"),this.title.textContent="Create Async",this.popup.appendChild(this.title),this.switchButton=document.createElement("button"),this.switchButton.textContent="Switch",this.popup.appendChild(this.switchButton),this.closeButton=document.createElement("button"),this.closeButton.textContent="Close",this.popup.appendChild(this.closeButton)}show(e){let t=document.createElement("div");t.textContent=`Player ID: ${e}`,this.popup.appendChild(t),document.body.appendChild(this.popup)}hide(){document.body.removeChild(this.popup)}},re=w});var C,l,A=u(()=>{"use strict";a();C=class extends Error{constructor(t,n){super(n);o(this,"code");this.code=t}},l=C});var D,b,S=u(()=>{"use strict";a();D=class{constructor(e,t){o(this,"type");o(this,"placementId");this.type=e,this.placementId=t}getPlacementID(){return this.placementId}async hideAsync(){return Promise.resolve()}},b=D});var Q={};g(Q,{default:()=>le});var ce,de,q,k,le,Y=u(()=>{"use strict";a();A();S();ce=`
+(function () {var __defProp = Object.defineProperty;
+var __getOwnPropNames = Object.getOwnPropertyNames;
+var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
+var __name = (target, value) => __defProp(target, "name", { value, configurable: true });
+var __esm = (fn, res) => function __init() {
+  return fn && (res = (0, fn[__getOwnPropNames(fn)[0]])(fn = 0)), res;
+};
+var __export = (target, all) => {
+  for (var name in all)
+    __defProp(target, name, { get: all[name], enumerable: true });
+};
+var __publicField = (obj, key, value) => {
+  __defNormalProp(obj, typeof key !== "symbol" ? key + "" : key, value);
+  return value;
+};
+
+// <define:__INIT_CONFIG__>
+var init_define_INIT_CONFIG = __esm({
+  "<define:__INIT_CONFIG__>"() {
+  }
+});
+
+// src/game-sdk/common/ChooseAsyncPopup.ts
+var ChooseAsyncPopup_exports = {};
+__export(ChooseAsyncPopup_exports, {
+  default: () => ChooseAsyncPopup_default
+});
+var _ChooseAsyncPopup, ChooseAsyncPopup, ChooseAsyncPopup_default;
+var init_ChooseAsyncPopup = __esm({
+  "src/game-sdk/common/ChooseAsyncPopup.ts"() {
+    "use strict";
+    init_define_INIT_CONFIG();
+    _ChooseAsyncPopup = class _ChooseAsyncPopup {
+      constructor() {
+        __publicField(this, "popup");
+        __publicField(this, "title");
+        __publicField(this, "chooseButton");
+        __publicField(this, "closeButton");
+        __publicField(this, "onChoose", /* @__PURE__ */ __name((callback) => {
+          this.chooseButton.addEventListener(
+            "click",
+            () => {
+              callback();
+              this.hide();
+            },
+            { once: true }
+          );
+        }, "onChoose"));
+        __publicField(this, "onClose", /* @__PURE__ */ __name((callback) => {
+          this.closeButton.addEventListener(
+            "click",
+            () => {
+              callback();
+              this.hide();
+            },
+            { once: true }
+          );
+        }, "onClose"));
+        this.popup = document.createElement("div");
+        this.popup.classList.add("popup");
+        this.popup.classList.add("dark-mode");
+        this.title = document.createElement("h2");
+        this.title.textContent = "Choose Async";
+        this.popup.appendChild(this.title);
+        this.chooseButton = document.createElement("button");
+        this.chooseButton.textContent = "Choose";
+        this.popup.appendChild(this.chooseButton);
+        this.closeButton = document.createElement("button");
+        this.closeButton.textContent = "Close";
+        this.popup.appendChild(this.closeButton);
+      }
+      show() {
+        document.body.appendChild(this.popup);
+      }
+      hide() {
+        document.body.removeChild(this.popup);
+      }
+    };
+    __name(_ChooseAsyncPopup, "ChooseAsyncPopup");
+    ChooseAsyncPopup = _ChooseAsyncPopup;
+    ChooseAsyncPopup_default = ChooseAsyncPopup;
+  }
+});
+
+// src/game-sdk/common/CreateAsyncPopup.ts
+var CreateAsyncPopup_exports = {};
+__export(CreateAsyncPopup_exports, {
+  default: () => CreateAsyncPopup_default
+});
+var _CreateAsyncPopup, CreateAsyncPopup, CreateAsyncPopup_default;
+var init_CreateAsyncPopup = __esm({
+  "src/game-sdk/common/CreateAsyncPopup.ts"() {
+    "use strict";
+    init_define_INIT_CONFIG();
+    _CreateAsyncPopup = class _CreateAsyncPopup {
+      constructor() {
+        __publicField(this, "popup");
+        __publicField(this, "title");
+        __publicField(this, "switchButton");
+        __publicField(this, "closeButton");
+        __publicField(this, "onSwitch", /* @__PURE__ */ __name((callback) => {
+          this.switchButton.addEventListener(
+            "click",
+            () => {
+              callback();
+              this.hide();
+            },
+            { once: true }
+          );
+        }, "onSwitch"));
+        __publicField(this, "onClose", /* @__PURE__ */ __name((callback) => {
+          this.closeButton.addEventListener(
+            "click",
+            () => {
+              callback();
+              this.hide();
+            },
+            { once: true }
+          );
+        }, "onClose"));
+        this.popup = document.createElement("div");
+        this.popup.classList.add("popup");
+        this.popup.classList.add("dark-mode");
+        this.title = document.createElement("h2");
+        this.title.textContent = "Create Async";
+        this.popup.appendChild(this.title);
+        this.switchButton = document.createElement("button");
+        this.switchButton.textContent = "Switch";
+        this.popup.appendChild(this.switchButton);
+        this.closeButton = document.createElement("button");
+        this.closeButton.textContent = "Close";
+        this.popup.appendChild(this.closeButton);
+      }
+      show(playerId) {
+        const playerIdElement = document.createElement("div");
+        playerIdElement.textContent = `Player ID: ${playerId}`;
+        this.popup.appendChild(playerIdElement);
+        document.body.appendChild(this.popup);
+      }
+      hide() {
+        document.body.removeChild(this.popup);
+      }
+    };
+    __name(_CreateAsyncPopup, "CreateAsyncPopup");
+    CreateAsyncPopup = _CreateAsyncPopup;
+    CreateAsyncPopup_default = CreateAsyncPopup;
+  }
+});
+
+// src/game-sdk/exceptions/SDKCommonError.ts
+var _SDKCommonError, SDKCommonError, SDKCommonError_default;
+var init_SDKCommonError = __esm({
+  "src/game-sdk/exceptions/SDKCommonError.ts"() {
+    "use strict";
+    init_define_INIT_CONFIG();
+    _SDKCommonError = class _SDKCommonError extends Error {
+      constructor(code, message) {
+        super(message);
+        __publicField(this, "code");
+        this.code = code;
+      }
+    };
+    __name(_SDKCommonError, "SDKCommonError");
+    SDKCommonError = _SDKCommonError;
+    SDKCommonError_default = SDKCommonError;
+  }
+});
+
+// src/game-sdk/sdk/AdInstance.ts
+var _AdInstance, AdInstance, AdInstance_default;
+var init_AdInstance = __esm({
+  "src/game-sdk/sdk/AdInstance.ts"() {
+    "use strict";
+    init_define_INIT_CONFIG();
+    _AdInstance = class _AdInstance {
+      constructor(type, placementId) {
+        __publicField(this, "type");
+        __publicField(this, "placementId");
+        this.type = type;
+        this.placementId = placementId;
+      }
+      getPlacementID() {
+        return this.placementId;
+      }
+      async hideAsync() {
+        return Promise.resolve();
+      }
+    };
+    __name(_AdInstance, "AdInstance");
+    AdInstance = _AdInstance;
+    AdInstance_default = AdInstance;
+  }
+});
+
+// src/game-sdk/common/MockBannerInstance.ts
+var MockBannerInstance_exports = {};
+__export(MockBannerInstance_exports, {
+  default: () => MockBannerInstance_default
+});
+var html2, css2, loadErrorCodes, _MockBannerInstance, MockBannerInstance, MockBannerInstance_default;
+var init_MockBannerInstance = __esm({
+  "src/game-sdk/common/MockBannerInstance.ts"() {
+    "use strict";
+    init_define_INIT_CONFIG();
+    init_SDKCommonError();
+    init_AdInstance();
+    html2 = /* html */
+    `
 <div class="mock-banner-ads-content">
     <img id="mock-banner-ads-image" alt="" />
 </div>
-`,de=`
+`;
+    css2 = /*css*/
+    `
 .mock-banner-ads-content {
     display: flex;
     position: fixed;
@@ -16,7 +225,134 @@
     width: 100%;
     object-fit: cover;
 }
-`,q=["NETWORK_FAILURE","ADS_FREQUENT_LOAD"],k=class extends b{constructor(t,n){super(t,n);o(this,"adContent");o(this,"apiAdContent");o(this,"mockAdElement");o(this,"errorRate");o(this,"setupBannerSizeAndPosition",()=>{let t=this.mockAdElement.querySelector(".mock-banner-ads-content");if(!(t instanceof HTMLDivElement))return;let n=document.getElementById("GameDiv");if(!n)return;let i=this.getBannerAdOption();if(!i)return;let{width:s,height:c}=n.getBoundingClientRect(),{width:p,height:m}=document.body.getBoundingClientRect(),{Position:h,BannerWidth:O,BannerHeight:T}=i;switch(t.style.width=O?`${O}px`:`${s}px`,t.style.height=T?`${T}px`:`${c}px`,h){case"right":t.style.right=`${(p-s)/2}px`,t.style.bottom=`${(m-c)/2}px`;break;case"left":case"bottom":default:t.style.left=`${(p-s)/2}px`,t.style.bottom=`${(m-c)/2}px`;break}});let{ErrorRate:i,GiphyApiKey:s}=GameCore.Configs.Mockup.Ads;this.adContent="",this.apiAdContent=`https://api.giphy.com/v1/gifs/trending?api_key=${s}&rate=pg&bundle=low_bandwidth`,this.errorRate=i,this.mockAdElement=this.createBannerMockElement(`mock-ads-${n}`),this.setupBannerSizeAndPosition(),this.listenDocumentBodyResize()}listenDocumentBodyResize(){new ResizeObserver(this.setupBannerSizeAndPosition).observe(document.body)}createBannerMockElement(t){if(document.getElementById(t))return document.getElementById(t);let n=document.createElement("div");return n.id=t,n.style.display="none",n.innerHTML=ce,this.addBannerMockElementStyle(),document.body.appendChild(n),n}addBannerMockElementStyle(){if(document.getElementById("mock-banner-ads-style"))return;let t=document.createElement("style");t.id="mock-banner-ads-style",(document.head||document.getElementsByTagName("head")[0]).appendChild(t),t.appendChild(document.createTextNode(de))}async getAdContentAsync(){let n=await(await fetch(this.apiAdContent,{method:"GET"})).json();if(!GameCore.Utils.Valid.isObject(n))return"";let i=n.data,s=Math.floor(Math.random()*i.length);return i[s].images.downsized.url}async loadAsync(){if(!(Math.random()*100<=this.errorRate))this.adContent=await this.getAdContentAsync(),await GameCore.Utils.Image.loadImage(this.adContent);else{await GameCore.Utils.Time.sleepAsync(1e3);let n=q[Math.floor(Math.random()*q.length)];throw new l(n,"Load ads mock error")}}async showAsync(){let t=this.mockAdElement.querySelector("#mock-banner-ads-image");t instanceof HTMLImageElement&&(this.mockAdElement.style.zIndex="888",this.mockAdElement.style.display="flex",t.src=this.adContent)}async hideAsync(){this.mockAdElement&&(this.mockAdElement.style.display="none")}getBannerAdOption(){let{BannerDisplayAdOptions:t}=GameCore.Configs.Ads;return t.find(n=>n.PlacementId===this.placementId)}},le=k});var G={};g(G,{default:()=>ue});var J,pe,me,X,Z,L,ue,B=u(()=>{"use strict";a();A();S();J=`
+`;
+    loadErrorCodes = ["NETWORK_FAILURE", "ADS_FREQUENT_LOAD"];
+    _MockBannerInstance = class _MockBannerInstance extends AdInstance_default {
+      constructor(type, placementId) {
+        super(type, placementId);
+        __publicField(this, "adContent");
+        __publicField(this, "apiAdContent");
+        __publicField(this, "mockAdElement");
+        __publicField(this, "errorRate");
+        __publicField(this, "setupBannerSizeAndPosition", /* @__PURE__ */ __name(() => {
+          const bannerElement = this.mockAdElement.querySelector(".mock-banner-ads-content");
+          if (!(bannerElement instanceof HTMLDivElement))
+            return;
+          const gameDiv = document.getElementById("GameDiv");
+          if (!gameDiv)
+            return;
+          const bannerAdOption = this.getBannerAdOption();
+          if (!bannerAdOption)
+            return;
+          const { width, height } = gameDiv.getBoundingClientRect();
+          const { width: cWidth, height: cHeight } = document.body.getBoundingClientRect();
+          const { Position, BannerWidth, BannerHeight } = bannerAdOption;
+          bannerElement.style.width = BannerWidth ? `${BannerWidth}px` : `${width}px`;
+          bannerElement.style.height = BannerHeight ? `${BannerHeight}px` : `${height}px`;
+          switch (Position) {
+            case "right":
+              bannerElement.style.right = `${(cWidth - width) / 2}px`;
+              bannerElement.style.bottom = `${(cHeight - height) / 2}px`;
+              break;
+            case "left":
+            case "bottom":
+            default:
+              bannerElement.style.left = `${(cWidth - width) / 2}px`;
+              bannerElement.style.bottom = `${(cHeight - height) / 2}px`;
+              break;
+          }
+        }, "setupBannerSizeAndPosition"));
+        const { ErrorRate, GiphyApiKey } = GameCore.Configs.Mockup.Ads;
+        this.adContent = "";
+        this.apiAdContent = `https://api.giphy.com/v1/gifs/trending?api_key=${GiphyApiKey}&rate=pg&bundle=low_bandwidth`;
+        this.errorRate = ErrorRate;
+        this.mockAdElement = this.createBannerMockElement(`mock-ads-${placementId}`);
+        this.setupBannerSizeAndPosition();
+        this.listenDocumentBodyResize();
+      }
+      listenDocumentBodyResize() {
+        const observer = new ResizeObserver(this.setupBannerSizeAndPosition);
+        observer.observe(document.body);
+      }
+      createBannerMockElement(id) {
+        if (document.getElementById(id)) {
+          return document.getElementById(id);
+        }
+        const mockAdElement = document.createElement("div");
+        mockAdElement.id = id;
+        mockAdElement.style.display = "none";
+        mockAdElement.innerHTML = html2;
+        this.addBannerMockElementStyle();
+        document.body.appendChild(mockAdElement);
+        return mockAdElement;
+      }
+      addBannerMockElementStyle() {
+        if (document.getElementById("mock-banner-ads-style"))
+          return;
+        const style = document.createElement("style");
+        style.id = "mock-banner-ads-style";
+        const head = document.head || document.getElementsByTagName("head")[0];
+        head.appendChild(style);
+        style.appendChild(document.createTextNode(css2));
+      }
+      async getAdContentAsync() {
+        const response = await fetch(this.apiAdContent, { method: "GET" });
+        const json = await response.json();
+        if (!GameCore.Utils.Valid.isObject(json))
+          return "";
+        const images = json.data;
+        const rand = Math.floor(Math.random() * images.length);
+        return images[rand].images.downsized.url;
+      }
+      async loadAsync() {
+        const isError = Math.random() * 100 <= this.errorRate;
+        if (!isError) {
+          this.adContent = await this.getAdContentAsync();
+          await GameCore.Utils.Image.loadImage(this.adContent);
+        } else {
+          await GameCore.Utils.Time.sleepAsync(1e3);
+          const code = loadErrorCodes[Math.floor(Math.random() * loadErrorCodes.length)];
+          throw new SDKCommonError_default(code, "Load ads mock error");
+        }
+      }
+      async showAsync() {
+        const imgTag = this.mockAdElement.querySelector("#mock-banner-ads-image");
+        if (!(imgTag instanceof HTMLImageElement))
+          return;
+        this.mockAdElement.style.zIndex = "888";
+        this.mockAdElement.style.display = "flex";
+        imgTag.src = this.adContent;
+      }
+      async hideAsync() {
+        if (!this.mockAdElement)
+          return;
+        this.mockAdElement.style.display = "none";
+      }
+      getBannerAdOption() {
+        const { BannerDisplayAdOptions } = GameCore.Configs.Ads;
+        return BannerDisplayAdOptions.find((option) => option.PlacementId === this.placementId);
+      }
+    };
+    __name(_MockBannerInstance, "MockBannerInstance");
+    MockBannerInstance = _MockBannerInstance;
+    MockBannerInstance_default = MockBannerInstance;
+  }
+});
+
+// src/game-sdk/common/MockAdInstance.ts
+var MockAdInstance_exports = {};
+__export(MockAdInstance_exports, {
+  default: () => MockAdInstance_default
+});
+var html3, css3, showMockPopupAd, loadErrorCodes2, showErrorCodes, _MockAdInstance, MockAdInstance, MockAdInstance_default;
+var init_MockAdInstance = __esm({
+  "src/game-sdk/common/MockAdInstance.ts"() {
+    "use strict";
+    init_define_INIT_CONFIG();
+    init_SDKCommonError();
+    init_AdInstance();
+    html3 = /* html */
+    `
 <div class="mock-ads-content">
     <div class="ad-header">
         <div id="close-btn">Close</div>
@@ -28,7 +364,9 @@
     </div>
     <div class="ad-footer"></div>
 </div>
-`,pe=`
+`;
+    css3 = /*css*/
+    `
 .mock-ads-content {
     width: 100%;
     height: 100%;
@@ -94,13 +432,313 @@
     position: absolute;
     background-color: #111111;
 }
-`,me=r=>{let{type:e,adContent:t,adElement:n,onSuccess:i,onSkip:s}=r;n.style.display="flex";let c=n.querySelector("#ad-type");c&&(c.innerHTML=`TYPE ${e.toUpperCase()}`);let p=n.querySelector("#ad-image");p instanceof HTMLImageElement&&(p.src=t);let m=n.querySelector("#close-btn"),h=n.querySelector("#reward-btn");e==="rewarded"&&(m instanceof HTMLDivElement&&(m.innerHTML="Skip",m.onclick=()=>s()),h instanceof HTMLDivElement&&(h.onclick=()=>i())),e==="interstitial"&&(m instanceof HTMLDivElement&&(m.onclick=()=>i()),h instanceof HTMLDivElement&&h.remove())},X=["NETWORK_FAILURE","ADS_FREQUENT_LOAD","ADS_NO_FILL","INVALID_PARAM"],Z=["INVALID_OPERATION","RATE_LIMITED","NETWORK_FAILURE","INVALID_PARAM","ADS_NOT_LOADED"],L=class extends b{constructor(t,n){super(t,n);o(this,"adContent");o(this,"apiAdContent");o(this,"mockAdElement");o(this,"errorRate");o(this,"setupAdSizeAndPosition",()=>{let t=this.mockAdElement.querySelector(".mock-ads-content");if(!(t instanceof HTMLDivElement))return;let n=document.getElementById("GameDiv");if(!n)return;let{width:i,height:s}=n.getBoundingClientRect();t.style.width=`${i}px`,t.style.height=`${s}px`;let{width:c,height:p}=document.body.getBoundingClientRect();t.style.left=`${(c-i)/2}px`,t.style.top=`${(p-s)/2}px`});let{ErrorRate:i,GiphyApiKey:s}=GameCore.Configs.Mockup.Ads;this.adContent=null,this.apiAdContent=`https://api.giphy.com/v1/gifs/trending?api_key=${s}&rate=pg&bundle=low_bandwidth`,this.errorRate=i,this.mockAdElement=this.createMockAdElement("mock-ads"),this.listenGameDivResize()}listenGameDivResize(){let t=document.getElementById("GameDiv");if(!t)return;new ResizeObserver(this.setupAdSizeAndPosition).observe(t)}createMockAdElement(t){if(document.getElementById(t))return document.getElementById(t);let n=document.createElement("div");return n.id=t,n.style.zIndex="999",n.style.display="none",n.innerHTML=J,this.addMockAdElementStyle(),document.body.appendChild(n),n}addMockAdElementStyle(){if(document.getElementById("mock-ads-style"))return;let t=document.createElement("style");t.id="mock-ads-style",(document.head||document.getElementsByTagName("head")[0]).appendChild(t),t.appendChild(document.createTextNode(pe))}async loadAsync(){if(Math.random()*100<=this.errorRate){await GameCore.Utils.Time.sleepAsync(1500);let n=X[Math.floor(Math.random()*X.length)];throw new l(n,"Load ads mock error")}else{if(this.adContent=await this.getAdContentAsync(),!this.adContent)throw new l("INVALID_PARAM","Load ads mock error");await GameCore.Utils.Image.loadImage(this.adContent)}}async showAsync(){if(Math.random()*100<=this.errorRate){await GameCore.Utils.Time.sleepAsync(1500);let n=Z[Math.floor(Math.random()*Z.length)];throw new l(n,"Show ads mock error")}else return this.mockAdElement.innerHTML=J,this.setupAdSizeAndPosition(),new Promise((n,i)=>{if(typeof this.adContent!="string"){i(new l("INVALID_PARAM","Show ads mock error"));return}me({type:this.type,adContent:this.adContent,adElement:this.mockAdElement,onSuccess:()=>{this.mockAdElement.style.display="none",n()},onSkip:()=>{this.mockAdElement.style.display="none",i(new l("USER_INPUT","Skip ads mock"))}})})}async getAdContentAsync(){let n=await(await fetch(this.apiAdContent,{method:"GET"})).json();if(!GameCore.Utils.Valid.isObject(n))return null;let i=n.data,s=Math.floor(Math.random()*i.length);return i[s].images.downsized.url}},ue=L});a();a();var y={};a();var _=[],ne=r=>{try{let e=new Error;if(e.stack==null)throw new Error;let t=e.stack.split(`
-`),i=t.length>=4?t[3]:t[0];if(!i||_.includes(i))return r;if(["eval","at <","(<"].some(s=>i.includes(s)))throw new Error;return _.push(i),r}catch{return}},oe=(r,e)=>{let t=Object.getOwnPropertyDescriptor(r,e)?.value;t&&Object.defineProperty(r,e,{enumerable:!1,get(){return ne(t)},set(){}})},R=oe;a();a();var v=class{constructor(e){o(this,"adapter");o(this,"extra");o(this,"currentContextID",null);o(this,"currentContextType","SOLO");o(this,"currentContextPlayers",[]);o(this,"chooseAsyncPopup",null);o(this,"createAsyncPopup",null);this.adapter=e,this.extra=e.extra}initContextInfo(e,t){!e||!t||["SOLO","THREAD","POST","GROUP"].includes(t)&&(this.currentContextID=e,this.currentContextType=t)}getID(){return this.currentContextID}getType(){return this.currentContextType}async switchAsync(e){if(e==="SOLO"){this.currentContextID=null,this.currentContextType="SOLO";return}this.currentContextID=e,this.currentContextType="THREAD"}async chooseAsync(e){if(!this.chooseAsyncPopup){let t=(await Promise.resolve().then(()=>(H(),N))).default;this.chooseAsyncPopup=new t}return new Promise((t,n)=>{this.chooseAsyncPopup||this.adapter.extra.exceptionUnsupported(),this.chooseAsyncPopup.onChoose(t),this.chooseAsyncPopup.onClose(n),this.chooseAsyncPopup.show()})}async createAsync(e){if(!this.createAsyncPopup){let t=(await Promise.resolve().then(()=>(j(),U))).default;this.createAsyncPopup=new t}return new Promise((t,n)=>{this.createAsyncPopup||this.adapter.extra.exceptionUnsupported(),this.createAsyncPopup.onSwitch(t),this.createAsyncPopup.onClose(n),this.createAsyncPopup.show(e)})}async getPlayersAsync(){return this.currentContextPlayers}},z=v;a();a();var se=`
+`;
+    showMockPopupAd = /* @__PURE__ */ __name((payload) => {
+      const { type, adContent, adElement, onSuccess, onSkip } = payload;
+      adElement.style.display = "flex";
+      const adTypeElement = adElement.querySelector("#ad-type");
+      if (adTypeElement) {
+        adTypeElement.innerHTML = `TYPE ${type.toUpperCase()}`;
+      }
+      const adImageElement = adElement.querySelector("#ad-image");
+      if (adImageElement instanceof HTMLImageElement) {
+        adImageElement.src = adContent;
+      }
+      const closeButton = adElement.querySelector("#close-btn");
+      const rewardButton = adElement.querySelector("#reward-btn");
+      if (type === "rewarded") {
+        if (closeButton instanceof HTMLDivElement) {
+          closeButton.innerHTML = "Skip";
+          closeButton.onclick = () => onSkip();
+        }
+        if (rewardButton instanceof HTMLDivElement) {
+          rewardButton.onclick = () => onSuccess();
+        }
+      }
+      if (type === "interstitial") {
+        if (closeButton instanceof HTMLDivElement) {
+          closeButton.onclick = () => onSuccess();
+        }
+        if (rewardButton instanceof HTMLDivElement) {
+          rewardButton.remove();
+        }
+      }
+    }, "showMockPopupAd");
+    loadErrorCodes2 = ["NETWORK_FAILURE", "ADS_FREQUENT_LOAD", "ADS_NO_FILL", "INVALID_PARAM"];
+    showErrorCodes = [
+      "INVALID_OPERATION",
+      "RATE_LIMITED",
+      "NETWORK_FAILURE",
+      "INVALID_PARAM",
+      "ADS_NOT_LOADED"
+    ];
+    _MockAdInstance = class _MockAdInstance extends AdInstance_default {
+      constructor(type, placementId) {
+        super(type, placementId);
+        __publicField(this, "adContent");
+        __publicField(this, "apiAdContent");
+        __publicField(this, "mockAdElement");
+        __publicField(this, "errorRate");
+        __publicField(this, "setupAdSizeAndPosition", /* @__PURE__ */ __name(() => {
+          const mockAdElement = this.mockAdElement.querySelector(".mock-ads-content");
+          if (!(mockAdElement instanceof HTMLDivElement))
+            return;
+          const gameDiv = document.getElementById("GameDiv");
+          if (!gameDiv)
+            return;
+          const { width, height } = gameDiv.getBoundingClientRect();
+          mockAdElement.style.width = `${width}px`;
+          mockAdElement.style.height = `${height}px`;
+          const { width: cWidth, height: cHeight } = document.body.getBoundingClientRect();
+          mockAdElement.style.left = `${(cWidth - width) / 2}px`;
+          mockAdElement.style.top = `${(cHeight - height) / 2}px`;
+        }, "setupAdSizeAndPosition"));
+        const { ErrorRate, GiphyApiKey } = GameCore.Configs.Mockup.Ads;
+        this.adContent = null;
+        this.apiAdContent = `https://api.giphy.com/v1/gifs/trending?api_key=${GiphyApiKey}&rate=pg&bundle=low_bandwidth`;
+        this.errorRate = ErrorRate;
+        this.mockAdElement = this.createMockAdElement("mock-ads");
+        this.listenGameDivResize();
+      }
+      listenGameDivResize() {
+        const gameDiv = document.getElementById("GameDiv");
+        if (!gameDiv)
+          return;
+        const observer = new ResizeObserver(this.setupAdSizeAndPosition);
+        observer.observe(gameDiv);
+      }
+      createMockAdElement(id) {
+        if (document.getElementById(id)) {
+          return document.getElementById(id);
+        }
+        const mockAdElement = document.createElement("div");
+        mockAdElement.id = id;
+        mockAdElement.style.zIndex = "999";
+        mockAdElement.style.display = "none";
+        mockAdElement.innerHTML = html3;
+        this.addMockAdElementStyle();
+        document.body.appendChild(mockAdElement);
+        return mockAdElement;
+      }
+      addMockAdElementStyle() {
+        if (document.getElementById("mock-ads-style"))
+          return;
+        const style = document.createElement("style");
+        style.id = "mock-ads-style";
+        const head = document.head || document.getElementsByTagName("head")[0];
+        head.appendChild(style);
+        style.appendChild(document.createTextNode(css3));
+      }
+      async loadAsync() {
+        const isError = Math.random() * 100 <= this.errorRate;
+        if (!isError) {
+          this.adContent = await this.getAdContentAsync();
+          if (!this.adContent) {
+            throw new SDKCommonError_default("INVALID_PARAM", "Load ads mock error");
+          }
+          await GameCore.Utils.Image.loadImage(this.adContent);
+        } else {
+          await GameCore.Utils.Time.sleepAsync(1500);
+          const code = loadErrorCodes2[Math.floor(Math.random() * loadErrorCodes2.length)];
+          throw new SDKCommonError_default(code, "Load ads mock error");
+        }
+      }
+      async showAsync() {
+        const isError = Math.random() * 100 <= this.errorRate;
+        if (!isError) {
+          this.mockAdElement.innerHTML = html3;
+          this.setupAdSizeAndPosition();
+          return new Promise((resolve, reject) => {
+            if (typeof this.adContent !== "string") {
+              reject(new SDKCommonError_default("INVALID_PARAM", "Show ads mock error"));
+              return;
+            }
+            showMockPopupAd({
+              type: this.type,
+              adContent: this.adContent,
+              adElement: this.mockAdElement,
+              onSuccess: () => {
+                this.mockAdElement.style.display = "none";
+                resolve();
+              },
+              onSkip: () => {
+                this.mockAdElement.style.display = "none";
+                reject(new SDKCommonError_default("USER_INPUT", "Skip ads mock"));
+              }
+            });
+          });
+        } else {
+          await GameCore.Utils.Time.sleepAsync(1500);
+          const code = showErrorCodes[Math.floor(Math.random() * showErrorCodes.length)];
+          throw new SDKCommonError_default(code, "Show ads mock error");
+        }
+      }
+      async getAdContentAsync() {
+        const response = await fetch(this.apiAdContent, { method: "GET" });
+        const json = await response.json();
+        if (!GameCore.Utils.Valid.isObject(json))
+          return null;
+        const images = json.data;
+        const rand = Math.floor(Math.random() * images.length);
+        return images[rand].images.downsized.url;
+      }
+    };
+    __name(_MockAdInstance, "MockAdInstance");
+    MockAdInstance = _MockAdInstance;
+    MockAdInstance_default = MockAdInstance;
+  }
+});
+
+// src/game-sdk/index.ts
+init_define_INIT_CONFIG();
+
+// libs/empty-script.js
+init_define_INIT_CONFIG();
+var empty_script_default = {};
+
+// src/utils/function/security.ts
+init_define_INIT_CONFIG();
+var usedCallLocations = [];
+var blockAccess = /* @__PURE__ */ __name((source) => {
+  try {
+    if (true)
+      return source;
+    if (false)
+      return source;
+    const error = new Error();
+    if (error.stack == null) {
+      throw new Error();
+    }
+    const stackLines = error.stack.split("\n");
+    const stackLineCount = stackLines.length;
+    const callerLine = stackLineCount >= 4 ? stackLines[3] : stackLines[0];
+    if (!callerLine)
+      return source;
+    if (usedCallLocations.includes(callerLine)) {
+      return source;
+    }
+    console.warn("Access:", callerLine);
+    if (["eval", "at <", "(<"].some((keyword) => callerLine.includes(keyword))) {
+      throw new Error();
+    }
+    usedCallLocations.push(callerLine);
+    return source;
+  } catch (error) {
+    console.warn("Block access:", error);
+    return void 0;
+  }
+}, "blockAccess");
+var wrapGetterToBlockObjectAccess = /* @__PURE__ */ __name((source, key) => {
+  const originalValue = Object.getOwnPropertyDescriptor(source, key)?.value;
+  if (!originalValue)
+    return;
+  Object.defineProperty(source, key, {
+    enumerable: false,
+    get() {
+      return blockAccess(originalValue);
+    },
+    set() {
+      return;
+    }
+  });
+}, "wrapGetterToBlockObjectAccess");
+var security_default = wrapGetterToBlockObjectAccess;
+
+// src/game-sdk/sdk/GameSDK.ts
+init_define_INIT_CONFIG();
+
+// src/game-sdk/sdk/Context.ts
+init_define_INIT_CONFIG();
+var _Context = class _Context {
+  constructor(adapter) {
+    __publicField(this, "adapter");
+    __publicField(this, "extra");
+    __publicField(this, "currentContextID", null);
+    __publicField(this, "currentContextType", "SOLO");
+    __publicField(this, "currentContextPlayers", []);
+    __publicField(this, "chooseAsyncPopup", null);
+    __publicField(this, "createAsyncPopup", null);
+    this.adapter = adapter;
+    this.extra = adapter.extra;
+  }
+  initContextInfo(contextId, contextType) {
+    if (!contextId || !contextType)
+      return;
+    if (!["SOLO", "THREAD", "POST", "GROUP"].includes(contextType)) {
+      console.warn(`Invalid context type: ${contextType}`);
+      return;
+    }
+    this.currentContextID = contextId;
+    this.currentContextType = contextType;
+  }
+  getID() {
+    return this.currentContextID;
+  }
+  getType() {
+    return this.currentContextType;
+  }
+  async switchAsync(contextId) {
+    if (contextId === "SOLO") {
+      this.currentContextID = null;
+      this.currentContextType = "SOLO";
+      return;
+    }
+    this.currentContextID = contextId;
+    this.currentContextType = "THREAD";
+  }
+  async chooseAsync(_options) {
+    if (!this.chooseAsyncPopup) {
+      const ChooseAsyncPopup2 = (await Promise.resolve().then(() => (init_ChooseAsyncPopup(), ChooseAsyncPopup_exports))).default;
+      this.chooseAsyncPopup = new ChooseAsyncPopup2();
+    }
+    return new Promise((resolve, reject) => {
+      if (!this.chooseAsyncPopup) {
+        this.adapter.extra.exceptionUnsupported();
+      }
+      this.chooseAsyncPopup.onChoose(resolve);
+      this.chooseAsyncPopup.onClose(reject);
+      this.chooseAsyncPopup.show();
+    });
+  }
+  async createAsync(playerId) {
+    if (!this.createAsyncPopup) {
+      const CreateAsyncPopup2 = (await Promise.resolve().then(() => (init_CreateAsyncPopup(), CreateAsyncPopup_exports))).default;
+      this.createAsyncPopup = new CreateAsyncPopup2();
+    }
+    return new Promise((resolve, reject) => {
+      if (!this.createAsyncPopup) {
+        this.adapter.extra.exceptionUnsupported();
+      }
+      this.createAsyncPopup.onSwitch(resolve);
+      this.createAsyncPopup.onClose(reject);
+      this.createAsyncPopup.show(playerId);
+    });
+  }
+  async getPlayersAsync() {
+    return this.currentContextPlayers;
+  }
+};
+__name(_Context, "Context");
+var Context = _Context;
+var Context_default = Context;
+
+// src/game-sdk/sdk/Extra.ts
+init_define_INIT_CONFIG();
+
+// src/game-sdk/common/LoadingScreenElement.ts
+init_define_INIT_CONFIG();
+var html = (
+  /*html*/
+  `
 <div id="lds-dual-ring"></div>
 <div id="lds-text">
     <span id="lds-percent">0</span>%
 </div>
-`,ae=`
+`
+);
+var css = (
+  /*css*/
+  `
 #lds-dual-ring {
     width: 64px;
     height: 64px;
@@ -147,6 +785,495 @@
         transform: rotate(360deg);
     }
 }
-`,f="lds-content",I=class{constructor(){document.addEventListener("DOMContentLoaded",()=>{this.createLoadingElement(),this.addLoadingElementStyle();let e=new MutationObserver(()=>{document.getElementById("GameDiv")&&this.setupLoadingElementSizeAndPosition()}),t={attributes:!0,childList:!0,subtree:!0},n=document.body;e.observe(n,t)})}createLoadingElement(){let e=document.createElement("div");return e.id=f,e.innerHTML=se,document.body.appendChild(e),e}addLoadingElementStyle(){let e=document.createElement("style");(document.head||document.getElementsByTagName("head")[0]).appendChild(e),e.appendChild(document.createTextNode(ae))}setupLoadingElementSizeAndPosition(){let e=document.getElementById(f);if(!e)return;let t=document.getElementById("GameDiv");if(!t)return;let{width:n,height:i}=t.getBoundingClientRect();e.style.width=`${n}px`,e.style.height=`${i}px`;let{width:s,height:c}=document.body.getBoundingClientRect();e.style.left=`${(s-n)/2}px`,e.style.top=`${(c-i)/2}px`}setLoadingProgress(e){let t=document.getElementById("lds-percent");if(!t)return;t.innerHTML=`${e}`;let n=document.getElementById(f);if(!n)return;let i=1-e/100;n.style.backgroundColor=`rgba(81, 81, 81, ${i})`}removeLoadingElement(){let e=document.getElementById(f);e&&(e.style.backgroundColor="rgba(81, 81, 81, 0)",setTimeout(()=>{e.remove()},300))}},$=I;A();var P=class{constructor(e){o(this,"adapter");o(this,"maxWaitGameCoreReadyTime",1e4);o(this,"loadingElement",null);this.adapter=e}async waitGameCoreReadyAsync(){let e=0;return new Promise(t=>{let n=setInterval(()=>{if("GameCore"in window){clearInterval(n),t();return}e+=100,e>this.maxWaitGameCoreReadyTime&&(e=0)},100)})}createLoadingElement(){this.loadingElement||(this.loadingElement=new $)}setLoadingElementProgress(e){this.loadingElement&&this.loadingElement.setLoadingProgress(e)}destroyLoadingElement(){this.loadingElement&&this.loadingElement.removeLoadingElement()}exceptionUserInput(e){throw new l("USER_INPUT",e)}exceptionUnsupported(){throw new l("UNSUPPORTED","Unsupported method")}exceptionInvalidParam(e){throw new l("INVALID_PARAM",e)}exceptionMethodNotImplemented(){throw new l("METHOD_NOT_IMPLEMENTED","Method not implemented")}},V=P;a();var F="Tile Connect Game".replace(/ /g,"-"),x=class{constructor(e){o(this,"adapter");o(this,"extra");o(this,"defaultPlayerInfo");o(this,"currentPlayerInfo");o(this,"infoKey",F+"_PlayerInfo");o(this,"dataKey",F+"_PlayerData");o(this,"getSignature",()=>{let e=this.getSignatureFormMockup();return GameCore.Utils.Valid.isString(e)?e:"default_token"});this.adapter=e,this.extra=e.extra,this.initDefaultPlayerInfo()}initDefaultPlayerInfo(){this.defaultPlayerInfo={playerId:"guest-007",playerName:"Guest",playerPhoto:""},this.currentPlayerInfo={...this.defaultPlayerInfo}}initPlayerInfo(e){this.updateCurrentPlayerInfo(e),GameCore.Utils.Browser.writeLocalStorage(this.infoKey,this.currentPlayerInfo)}getID(){let{Browser:e,Valid:t,Object:n}=GameCore.Utils,i=e.getLocalStorage(this.infoKey),{playerId:s}=this.currentPlayerInfo;return t.isObject(i)&&n.hasOwn(i,"playerId")&&t.isString(i.playerId)?i.playerId:s}getName(){let{Browser:e,Valid:t,Object:n}=GameCore.Utils,i=e.getLocalStorage(this.infoKey),{playerName:s}=this.currentPlayerInfo;return t.isObject(i)&&n.hasOwn(i,"name")&&t.isString(i.name)?i.name:s}getPhoto(){let{Browser:e,Valid:t,Object:n}=GameCore.Utils,i=e.getLocalStorage(this.infoKey),{playerPhoto:s}=this.currentPlayerInfo;return t.isObject(i)&&n.hasOwn(i,"photo")&&t.isString(i.photo)?i.photo:s}async getDataAsync(e){let{Browser:t,Valid:n,Object:i}=GameCore.Utils,s=t.getLocalStorage(this.dataKey);if(!n.isObject(s))return{};if(e.length===0)return s;let c={};return e.forEach(p=>{i.hasOwn(s,p)&&(c[p]=s[p])}),c}async setDataAsync(e){GameCore.Utils.Browser.writeLocalStorage(this.dataKey,e)}async getSignedPlayerInfoAsync(){return{getPlayerID:()=>this.getID()??"",getSignature:this.getSignature}}async getConnectedPlayersAsync(){return[]}updateCurrentPlayerInfo(e){if(!e)return;let{Match:t}=GameCore.Configs.Mockup,n=t.PlayerInfo.Id===e,i=t.OpponentInfo.Id===e;n&&(this.currentPlayerInfo.playerId=t.PlayerInfo.Id,t.PlayerInfo.Name&&(this.currentPlayerInfo.playerName=t.PlayerInfo.Name),t.PlayerInfo.Photo&&(this.currentPlayerInfo.playerPhoto=t.PlayerInfo.Photo)),i&&(this.currentPlayerInfo.playerId=t.OpponentInfo.Id,t.OpponentInfo.Name&&(this.currentPlayerInfo.playerName=t.OpponentInfo.Name),t.OpponentInfo.Photo&&(this.currentPlayerInfo.playerPhoto=t.OpponentInfo.Photo))}getSignatureFormMockup(){let{Match:e}=GameCore.Configs.Mockup,t=e.PlayerInfo.Id===this.getID(),n=e.OpponentInfo.Id===this.getID();return t?e.PlayerInfo.Signature:n?e.OpponentInfo.Signature:null}},W=x;var M=class{constructor(){o(this,"extra");o(this,"player");o(this,"context");o(this,"isInitialized",!1);o(this,"bannerAdInstances",{});o(this,"rewardedVideoInstance",null);o(this,"interstitialAdInstance",null)}initialize(){this.extra=new V(this),this.player=new W(this),this.context=new z(this)}getLocale(){return GameCore.Utils.Browser.getLocale()}getPlatform(){let{Device:e}=GameCore.Utils;return e.isAndroid()?"ANDROID":e.isIOS()?"IOS":e.isDesktop()?"WEB":e.isMobile()?"MOBILE_WEB":null}getSDKName(){return"GameCore"}getSDKVersion(){return"1.0.0"}async initializeAsync(){if(this.isInitialized)return;this.initialize(),this.extra.createLoadingElement(),await this.extra.waitGameCoreReadyAsync();let e=GameCore.Utils.Browser.getQueryParams(),t=e.playerId;this.player.initPlayerInfo(t);let n=e.context_source_id,i=e.context_type;this.context.initContextInfo(n,i),this.isInitialized=!0}async startGameAsync(){window.__sdkLoadingCount=100,this.setLoadingProgress(100),this.extra.destroyLoadingElement()}setLoadingProgress(e){this.extra.setLoadingElementProgress(e)}getEntryPointData(){return{}}async getEntryPointAsync(){return"no_entry"}async loadBannerAdAsync(e){if(!e)return;let{Enable:t}=GameCore.Configs.Mockup.Ads;if(t||this.extra.exceptionInvalidParam("Banner ads mock is not enabled"),!this.bannerAdInstances[e]){let n=(await Promise.resolve().then(()=>(Y(),Q))).default;this.bannerAdInstances[e]=new n("banner",e)}await this.bannerAdInstances[e].loadAsync(),await this.bannerAdInstances[e].showAsync()}async hideBannerAdAsync(e){this.bannerAdInstances[e]&&await this.bannerAdInstances[e].hideAsync()}async getInterstitialAdAsync(e){let{Enable:t}=GameCore.Configs.Mockup.Ads;if(t||this.extra.exceptionInvalidParam("Interstitial ads mock is not enabled"),!this.interstitialAdInstance){let n=(await Promise.resolve().then(()=>(B(),G))).default;this.interstitialAdInstance=new n("interstitial",e)}return this.interstitialAdInstance}async getRewardedVideoAsync(e){let{Enable:t}=GameCore.Configs.Mockup.Ads;if(t||this.extra.exceptionInvalidParam("Rewarded video ads mock is not enabled"),!this.rewardedVideoInstance){let n=(await Promise.resolve().then(()=>(B(),G))).default;this.rewardedVideoInstance=new n("rewarded",e)}return this.rewardedVideoInstance}},ee=M;function he(){let r,e=window,t="GameSDK";return"FBInstant"in e?(t="FBInstant",r=new y(window.FBInstant)):"gdsdk"in e?(t="GameDistribution",r=new y(window.gdsdk)):"CrazyGames"in e?(t="CrazyGames",r=new y(window.CrazyGames.SDK)):r=new ee,r}window.GameSDK=Object.seal(he());R(window,"GameSDK");
-})();(function () {var r={GA_MEASUREMENT_ID:"null"};var d=r,_=()=>{let n=setInterval(()=>{if(window.__sdkLoadingCount>=99){clearInterval(n);return}GameSDK.setLoadingProgress(window.__sdkLoadingCount++)},100)};var w=async()=>{try{window.__sdkLoadingCount=1,_(),await GameSDK.initializeAsync(),await l(),window.__sdkInitiated=!0}catch{}},l=async()=>{if(!d)return;let{BUILD_VERSION:n=0,GA_MEASUREMENT_ID:o}=d||{},e=GameSDK.player.getID(),i="no_entry";try{i=await GameSDK.getEntryPointAsync()}catch{}m(o,n,e,i)},m=(n,o,e,i)=>{if(n!="null")try{let{fbig_ad_id:t,fbig_adset_id:g,fbig_campaign_id:s}=GameSDK.getEntryPointData()||{},a=document.createElement("script");a.async=!0,a.src="https://www.googletagmanager.com/window.gtag/js?id="+n,document.head.appendChild(a),window.focus(),window.gtag("set","client_id",`100.${e}`),window.gtag("set","user_id",e),window.gtag("set","send_page_view",!1),window.gtag("js",new Date),window.gtag("config",n,{groups:"GA",build:o,medium:i,campaign:s,cookie_flags:"SameSite=None;Secure"}),window.gtag("set","user_properties",{user_id:e,ad_id:t,adset_id:g,campaign_id:s,traffic_source:i}),window.gtag("event","app_launch",{send_to:"GA"})}catch{}};w();
+`
+);
+var loadingId = "lds-content";
+var _LoadingScreenElement = class _LoadingScreenElement {
+  constructor() {
+    document.addEventListener("DOMContentLoaded", () => {
+      this.createLoadingElement();
+      this.addLoadingElementStyle();
+      const observer = new MutationObserver(() => {
+        const gameDiv = document.getElementById("GameDiv");
+        if (!gameDiv)
+          return;
+        this.setupLoadingElementSizeAndPosition();
+      });
+      const config = { attributes: true, childList: true, subtree: true };
+      const target = document.body;
+      observer.observe(target, config);
+    });
+  }
+  createLoadingElement() {
+    const loadingElement = document.createElement("div");
+    loadingElement.id = loadingId;
+    loadingElement.innerHTML = html;
+    document.body.appendChild(loadingElement);
+    return loadingElement;
+  }
+  addLoadingElementStyle() {
+    const style = document.createElement("style");
+    const head = document.head || document.getElementsByTagName("head")[0];
+    head.appendChild(style);
+    style.appendChild(document.createTextNode(css));
+  }
+  setupLoadingElementSizeAndPosition() {
+    const loadingElement = document.getElementById(loadingId);
+    if (!loadingElement)
+      return;
+    const gameDiv = document.getElementById("GameDiv");
+    if (!gameDiv)
+      return;
+    const { width, height } = gameDiv.getBoundingClientRect();
+    loadingElement.style.width = `${width}px`;
+    loadingElement.style.height = `${height}px`;
+    const { width: cWidth, height: cHeight } = document.body.getBoundingClientRect();
+    loadingElement.style.left = `${(cWidth - width) / 2}px`;
+    loadingElement.style.top = `${(cHeight - height) / 2}px`;
+  }
+  setLoadingProgress(percentage) {
+    const loadingPercent = document.getElementById("lds-percent");
+    if (!loadingPercent)
+      return;
+    loadingPercent.innerHTML = `${percentage}`;
+    const loadingElement = document.getElementById(loadingId);
+    if (!loadingElement)
+      return;
+    const opacity = 1 - percentage / 100;
+    loadingElement.style.backgroundColor = `rgba(81, 81, 81, ${opacity})`;
+  }
+  removeLoadingElement() {
+    const loadingElement = document.getElementById(loadingId);
+    if (!loadingElement)
+      return;
+    loadingElement.style.backgroundColor = `rgba(81, 81, 81, 0)`;
+    setTimeout(() => {
+      loadingElement.remove();
+    }, 300);
+  }
+};
+__name(_LoadingScreenElement, "LoadingScreenElement");
+var LoadingScreenElement = _LoadingScreenElement;
+var LoadingScreenElement_default = LoadingScreenElement;
+
+// src/game-sdk/sdk/Extra.ts
+init_SDKCommonError();
+var _Extra = class _Extra {
+  constructor(adapter) {
+    __publicField(this, "adapter");
+    __publicField(this, "maxWaitGameCoreReadyTime", 1e4);
+    __publicField(this, "loadingElement", null);
+    this.adapter = adapter;
+  }
+  async waitGameCoreReadyAsync() {
+    let waitTime = 0;
+    return new Promise((resolve) => {
+      const waitInterval = setInterval(() => {
+        if ("GameCore" in window) {
+          clearInterval(waitInterval);
+          resolve();
+          return;
+        }
+        waitTime += 100;
+        if (waitTime > this.maxWaitGameCoreReadyTime) {
+          waitTime = 0;
+          console.warn("GameCore is slow to load, please check your network connection.");
+        }
+      }, 100);
+    });
+  }
+  createLoadingElement() {
+    if (this.loadingElement)
+      return;
+    this.loadingElement = new LoadingScreenElement_default();
+  }
+  setLoadingElementProgress(progress) {
+    if (!this.loadingElement)
+      return;
+    this.loadingElement.setLoadingProgress(progress);
+  }
+  destroyLoadingElement() {
+    if (!this.loadingElement)
+      return;
+    this.loadingElement.removeLoadingElement();
+  }
+  // ? Why is this method here?
+  // * Make reduce code size and make it easier to read
+  exceptionUserInput(message) {
+    throw new SDKCommonError_default("USER_INPUT", message);
+  }
+  exceptionUnsupported() {
+    throw new SDKCommonError_default("UNSUPPORTED", "Unsupported method");
+  }
+  exceptionInvalidParam(message) {
+    throw new SDKCommonError_default("INVALID_PARAM", message);
+  }
+  exceptionMethodNotImplemented() {
+    throw new SDKCommonError_default("METHOD_NOT_IMPLEMENTED", "Method not implemented");
+  }
+};
+__name(_Extra, "Extra");
+var Extra = _Extra;
+var Extra_default = Extra;
+
+// src/game-sdk/sdk/Player.ts
+init_define_INIT_CONFIG();
+var GameName = "Tile Connect Game".replace(/ /g, "-");
+var _Player = class _Player {
+  constructor(adapter) {
+    __publicField(this, "adapter");
+    __publicField(this, "extra");
+    __publicField(this, "defaultPlayerInfo");
+    __publicField(this, "currentPlayerInfo");
+    __publicField(this, "infoKey", GameName + "_PlayerInfo");
+    __publicField(this, "dataKey", GameName + "_PlayerData");
+    __publicField(this, "getSignature", /* @__PURE__ */ __name(() => {
+      const token = this.getSignatureFormMockup();
+      if (GameCore.Utils.Valid.isString(token))
+        return token;
+      return "default_token";
+    }, "getSignature"));
+    this.adapter = adapter;
+    this.extra = adapter.extra;
+    this.initDefaultPlayerInfo();
+  }
+  initDefaultPlayerInfo() {
+    this.defaultPlayerInfo = {
+      playerId: "guest-007",
+      playerName: "Guest",
+      playerPhoto: ""
+    };
+    this.currentPlayerInfo = { ...this.defaultPlayerInfo };
+  }
+  initPlayerInfo(playerId) {
+    this.updateCurrentPlayerInfo(playerId);
+    GameCore.Utils.Browser.writeLocalStorage(this.infoKey, this.currentPlayerInfo);
+  }
+  getID() {
+    const { Browser, Valid, Object: O } = GameCore.Utils;
+    const data = Browser.getLocalStorage(this.infoKey);
+    const { playerId } = this.currentPlayerInfo;
+    if (!Valid.isObject(data))
+      return playerId;
+    if (O.hasOwn(data, "playerId") && Valid.isString(data.playerId)) {
+      return data.playerId;
+    }
+    return playerId;
+  }
+  getName() {
+    const { Browser, Valid, Object: O } = GameCore.Utils;
+    const data = Browser.getLocalStorage(this.infoKey);
+    const { playerName } = this.currentPlayerInfo;
+    if (!Valid.isObject(data))
+      return playerName;
+    if (O.hasOwn(data, "name") && Valid.isString(data.name)) {
+      return data.name;
+    }
+    return playerName;
+  }
+  getPhoto() {
+    const { Browser, Valid, Object: O } = GameCore.Utils;
+    const data = Browser.getLocalStorage(this.infoKey);
+    const { playerPhoto } = this.currentPlayerInfo;
+    if (!Valid.isObject(data))
+      return playerPhoto;
+    if (O.hasOwn(data, "photo") && Valid.isString(data.photo)) {
+      return data.photo;
+    }
+    return playerPhoto;
+  }
+  async getDataAsync(keys) {
+    const { Browser, Valid, Object: O } = GameCore.Utils;
+    const data = Browser.getLocalStorage(this.dataKey);
+    if (!Valid.isObject(data))
+      return {};
+    if (keys.length === 0)
+      return data;
+    const dataObject = {};
+    keys.forEach((key) => {
+      if (O.hasOwn(data, key)) {
+        dataObject[key] = data[key];
+      }
+    });
+    return dataObject;
+  }
+  async setDataAsync(data) {
+    GameCore.Utils.Browser.writeLocalStorage(this.dataKey, data);
+  }
+  async getSignedPlayerInfoAsync() {
+    return {
+      getPlayerID: () => {
+        return this.getID() ?? "";
+      },
+      getSignature: this.getSignature
+    };
+  }
+  async getConnectedPlayersAsync() {
+    return [];
+  }
+  updateCurrentPlayerInfo(playerId) {
+    if (!playerId)
+      return;
+    const { Match } = GameCore.Configs.Mockup;
+    const isPlayer = Match.PlayerInfo.Id === playerId;
+    const isOpponent = Match.OpponentInfo.Id === playerId;
+    if (isPlayer) {
+      this.currentPlayerInfo.playerId = Match.PlayerInfo.Id;
+      if (Match.PlayerInfo.Name) {
+        this.currentPlayerInfo.playerName = Match.PlayerInfo.Name;
+      }
+      if (Match.PlayerInfo.Photo) {
+        this.currentPlayerInfo.playerPhoto = Match.PlayerInfo.Photo;
+      }
+    }
+    if (isOpponent) {
+      this.currentPlayerInfo.playerId = Match.OpponentInfo.Id;
+      if (Match.OpponentInfo.Name) {
+        this.currentPlayerInfo.playerName = Match.OpponentInfo.Name;
+      }
+      if (Match.OpponentInfo.Photo) {
+        this.currentPlayerInfo.playerPhoto = Match.OpponentInfo.Photo;
+      }
+    }
+  }
+  getSignatureFormMockup() {
+    const { Match } = GameCore.Configs.Mockup;
+    const isPlayer = Match.PlayerInfo.Id === this.getID();
+    const isOpponent = Match.OpponentInfo.Id === this.getID();
+    if (isPlayer)
+      return Match.PlayerInfo.Signature;
+    if (isOpponent)
+      return Match.OpponentInfo.Signature;
+    return null;
+  }
+};
+__name(_Player, "Player");
+var Player = _Player;
+var Player_default = Player;
+
+// src/game-sdk/sdk/GameSDK.ts
+var _GameSDK = class _GameSDK {
+  constructor() {
+    __publicField(this, "extra");
+    __publicField(this, "player");
+    __publicField(this, "context");
+    __publicField(this, "isInitialized", false);
+    __publicField(this, "bannerAdInstances", {});
+    __publicField(this, "rewardedVideoInstance", null);
+    __publicField(this, "interstitialAdInstance", null);
+  }
+  initialize() {
+    this.extra = new Extra_default(this);
+    this.player = new Player_default(this);
+    this.context = new Context_default(this);
+  }
+  getLocale() {
+    return GameCore.Utils.Browser.getLocale();
+  }
+  getPlatform() {
+    const { Device } = GameCore.Utils;
+    if (Device.isAndroid())
+      return "ANDROID";
+    if (Device.isIOS())
+      return "IOS";
+    if (Device.isDesktop())
+      return "WEB";
+    if (Device.isMobile())
+      return "MOBILE_WEB";
+    return null;
+  }
+  getSDKName() {
+    return "GameCore";
+  }
+  getSDKVersion() {
+    return "1.0.0";
+  }
+  async initializeAsync() {
+    if (this.isInitialized)
+      return;
+    this.initialize();
+    this.extra.createLoadingElement();
+    await this.extra.waitGameCoreReadyAsync();
+    const params = GameCore.Utils.Browser.getQueryParams();
+    const playerIdInQuery = params["playerId"];
+    this.player.initPlayerInfo(playerIdInQuery);
+    const contextIdInQuery = params["context_source_id"];
+    const contextTypeInQuery = params["context_type"];
+    this.context.initContextInfo(contextIdInQuery, contextTypeInQuery);
+    this.isInitialized = true;
+  }
+  async startGameAsync() {
+    const initedPercent = 100;
+    window.__sdkLoadingCount = initedPercent;
+    this.setLoadingProgress(initedPercent);
+    this.extra.destroyLoadingElement();
+  }
+  setLoadingProgress(percentage) {
+    this.extra.setLoadingElementProgress(percentage);
+  }
+  getEntryPointData() {
+    return {};
+  }
+  async getEntryPointAsync() {
+    return "no_entry";
+  }
+  async loadBannerAdAsync(placementId) {
+    if (!placementId)
+      return;
+    const { Enable } = GameCore.Configs.Mockup.Ads;
+    if (!Enable) {
+      this.extra.exceptionInvalidParam("Banner ads mock is not enabled");
+    }
+    if (!this.bannerAdInstances[placementId]) {
+      const MockBannerInstance2 = (await Promise.resolve().then(() => (init_MockBannerInstance(), MockBannerInstance_exports))).default;
+      this.bannerAdInstances[placementId] = new MockBannerInstance2("banner", placementId);
+    }
+    await this.bannerAdInstances[placementId].loadAsync();
+    await this.bannerAdInstances[placementId].showAsync();
+  }
+  async hideBannerAdAsync(placementId) {
+    if (!this.bannerAdInstances[placementId])
+      return;
+    await this.bannerAdInstances[placementId].hideAsync();
+  }
+  async getInterstitialAdAsync(placementId) {
+    const { Enable } = GameCore.Configs.Mockup.Ads;
+    if (!Enable) {
+      this.extra.exceptionInvalidParam("Interstitial ads mock is not enabled");
+    }
+    if (!this.interstitialAdInstance) {
+      const MockAdInstance2 = (await Promise.resolve().then(() => (init_MockAdInstance(), MockAdInstance_exports))).default;
+      this.interstitialAdInstance = new MockAdInstance2("interstitial", placementId);
+    }
+    return this.interstitialAdInstance;
+  }
+  async getRewardedVideoAsync(placementId) {
+    const { Enable } = GameCore.Configs.Mockup.Ads;
+    if (!Enable) {
+      this.extra.exceptionInvalidParam("Rewarded video ads mock is not enabled");
+    }
+    if (!this.rewardedVideoInstance) {
+      const MockAdInstance2 = (await Promise.resolve().then(() => (init_MockAdInstance(), MockAdInstance_exports))).default;
+      this.rewardedVideoInstance = new MockAdInstance2("rewarded", placementId);
+    }
+    return this.rewardedVideoInstance;
+  }
+};
+__name(_GameSDK, "GameSDK");
+var GameSDK = _GameSDK;
+var GameSDK_default = GameSDK;
+
+// src/game-sdk/index.ts
+function autoDetectAndInitializeSDKAdapter() {
+  let sdkAdapter;
+  const w = window;
+  let sdkName = "GameSDK";
+  if ("FBInstant" in w) {
+    sdkName = "FBInstant";
+    sdkAdapter = new empty_script_default(window.FBInstant);
+  } else if ("gdsdk" in w) {
+    sdkName = "GameDistribution";
+    sdkAdapter = new empty_script_default(window.gdsdk);
+  } else if ("CrazyGames" in w) {
+    sdkName = "CrazyGames";
+    sdkAdapter = new empty_script_default(window.CrazyGames.SDK);
+  } else if (false) {
+    sdkName = "AndroidNative";
+    sdkAdapter = new ANAdapter();
+  } else {
+    sdkAdapter = new GameSDK_default();
+  }
+  console.info(`GameSDK loaded (${sdkName})`);
+  return sdkAdapter;
+}
+__name(autoDetectAndInitializeSDKAdapter, "autoDetectAndInitializeSDKAdapter");
+window.GameSDK = Object.seal(autoDetectAndInitializeSDKAdapter());
+security_default(window, "GameSDK");
+})();(function () {var __defProp = Object.defineProperty;
+var __name = (target, value) => __defProp(target, "name", { value, configurable: true });
+
+// <define:__INIT_CONFIG__>
+var define_INIT_CONFIG_default = { GA_MEASUREMENT_ID: "null" };
+
+// libs/init-game-sdk.js
+var initConfig = define_INIT_CONFIG_default;
+var lastProgress = 0;
+var stepProgressLoading = /* @__PURE__ */ __name(() => {
+  const gameSdkLoadingTimer = setInterval(() => {
+    if (window.__sdkLoadingCount >= 99) {
+      clearInterval(gameSdkLoadingTimer);
+      return;
+    }
+    if (lastProgress === window.__sdkLoadingCount)
+      return;
+    lastProgress = window.__sdkLoadingCount;
+    GameSDK.setLoadingProgress(window.__sdkLoadingCount);
+  }, 100);
+}, "stepProgressLoading");
+var initGameSDK = /* @__PURE__ */ __name(async () => {
+  try {
+    console.info("GameSDK initializing...");
+    window.__sdkLoadingCount = 1;
+    if (true) {
+      stepProgressLoading();
+    } else {
+      autoProgressLoading();
+    }
+    await GameSDK.initializeAsync();
+    await processGoogleAnalytics();
+    window.__sdkInitiated = true;
+    console.info("GameSDK initialized");
+  } catch (error) {
+    console.error("GameSDK initializeAsync:", error);
+  }
+}, "initGameSDK");
+var processGoogleAnalytics = /* @__PURE__ */ __name(async () => {
+  if (!initConfig)
+    return;
+  const { BUILD_VERSION = 0, GA_MEASUREMENT_ID } = initConfig || {};
+  const userId = GameSDK.player.getID();
+  let entryPoint = "no_entry";
+  try {
+    entryPoint = await GameSDK.getEntryPointAsync();
+  } catch (error) {
+    console.warn("GameSDK", error);
+  }
+  initGoogleAnalytics(GA_MEASUREMENT_ID, BUILD_VERSION, userId, entryPoint);
+}, "processGoogleAnalytics");
+var initGoogleAnalytics = /* @__PURE__ */ __name((gaId, buildVer, userId, entryPoint) => {
+  if (gaId == "null")
+    return;
+  try {
+    const { fbig_ad_id, fbig_adset_id, fbig_campaign_id } = GameSDK.getEntryPointData() || {};
+    const gaScript = document.createElement("script");
+    gaScript.async = true;
+    gaScript.src = "https://www.googletagmanager.com/window.gtag/js?id=" + gaId;
+    document.head.appendChild(gaScript);
+    window.focus();
+    window.gtag("set", "client_id", `100.${userId}`);
+    window.gtag("set", "user_id", userId);
+    window.gtag("set", "send_page_view", false);
+    window.gtag("js", /* @__PURE__ */ new Date());
+    window.gtag("config", gaId, {
+      groups: "GA",
+      build: buildVer,
+      medium: entryPoint,
+      campaign: fbig_campaign_id,
+      cookie_flags: "SameSite=None;Secure"
+    });
+    window.gtag("set", "user_properties", {
+      user_id: userId,
+      ad_id: fbig_ad_id,
+      adset_id: fbig_adset_id,
+      campaign_id: fbig_campaign_id,
+      traffic_source: entryPoint
+    });
+    window.gtag("event", "app_launch", {
+      send_to: "GA"
+    });
+  } catch (error) {
+    console.warn("GameSDK initGoogleAnalytics:", error);
+  }
+}, "initGoogleAnalytics");
+initGameSDK();
 })();
