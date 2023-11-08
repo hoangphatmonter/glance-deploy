@@ -1,86 +1,7 @@
-<!DOCTYPE html>
-
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>Tile Connect Game</title>
-
-        <!--http://www.html5rocks.com/en/mobile/mobifying/-->
-        <meta
-            name="viewport"
-            content="width=device-width,user-scalable=no,initial-scale=1,minimum-scale=1,maximum-scale=1"
-        />
-
-        <!--https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-        <meta name="format-detection" content="telephone=no" />
-
-        <!-- force webkit on 360 -->
-        <meta name="renderer" content="webkit" />
-        <meta name="force-rendering" content="webkit" />
-
-        <!-- force edge on IE -->
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-        <meta name="msapplication-tap-highlight" content="no" />
-
-        <!-- force full screen on some browser -->
-        <meta name="full-screen" content="yes" />
-        <meta name="x5-fullscreen" content="true" />
-        <meta name="360-fullscreen" content="true" />
-
-        <!-- ? Need custom orientation? -->
-        <!-- <meta name="screen-orientation" content="portrait" /> -->
-
-        <!--fix fireball/issues/3568 -->
-        <!--<meta name="browsermode" content="application">-->
-        <meta name="x5-page-mode" content="app" />
-
-        <link href="./game-sdk.js" rel="preload" as="script" />
-        <link href="./GameCore.js" rel="preload" as="script" />
-
-        <!-- Polyfill runtime -->
-        <script src="https://polyfill.io/v3/polyfill.min.js?features=es5&flags=gated"></script>
-
-        <!-- Google Analytics -->
-        <script>
-    window.dataLayer = window.dataLayer || []
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><title>Tile Connect Game</title><meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,minimum-scale=1,maximum-scale=1"/><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/><meta name="format-detection" content="telephone=no"/><meta name="renderer" content="webkit"/><meta name="force-rendering" content="webkit"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><meta name="msapplication-tap-highlight" content="no"/><meta name="full-screen" content="yes"/><meta name="x5-fullscreen" content="true"/><meta name="360-fullscreen" content="true"/><meta name="x5-page-mode" content="app"/><link href="./game-sdk.js" rel="preload" as="script"/><link href="./GameCore.js" rel="preload" as="script"/><script src="https://polyfill.io/v3/polyfill.min.js?features=es5&flags=gated"></script><script>window.dataLayer = window.dataLayer || []
     function gtag() {
         dataLayer.push(arguments)
-    }
-    </script>
-
-        <!-- Game Distribution -->
-        
-
-        <!-- Game SDK -->
-        
-        <script src="./game-sdk.js"></script>
-
-        <link rel="stylesheet" type="text/css" href="style.css" />
-
-        
-      <script type="module" crossorigin src="./GameCore.js"></script>
-      
-      
-      
-    </head>
-
-    <body>
-        
-
-        
-
-        <!--  -->
-        
-        <!--  -->
-        <div id="GameDiv" cc_exact_fit_screen="true">
-    <div id="Cocos3dGameContainer">
-      <canvas id="GameCanvas" oncontextmenu="event.preventDefault()" tabindex="99"></canvas>
-    </div>
-  </div>
-        <!--  -->
-        
+    }</script><script src="./game-sdk.js"></script><link rel="stylesheet" href="style.css"/><script type="module" crossorigin src="./GameCore.js"></script></head><body><div id="GameDiv" cc_exact_fit_screen="true"><div id="Cocos3dGameContainer"><canvas id="GameCanvas" oncontextmenu="event.preventDefault()" tabindex="99"></canvas></div></div>
 <!-- Polyfills bundle. -->
 <script src="src/polyfills.bundle.js" charset="utf-8"> </script>
 
@@ -93,6 +14,4 @@
 <script>
     System.import('./index.js').catch(function(err) { console.error(err); })
 </script>
-
-    </body>
-</html>
+</body></html>
