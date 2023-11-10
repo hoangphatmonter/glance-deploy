@@ -1,7 +1,11 @@
-System.register("chunks:///resources.js",[],(function(){return{execute:function(){}}}));
+System.register("bundle://resources/resources.js", [], function () {
+  return {
+    execute: function () {}
+  };
+});
 
 (function(r) {
-  r('virtual:///prerequisite-imports/resources', 'chunks:///resources.js'); 
+  r('virtual:///prerequisite-imports/resources', 'bundle://resources/resources.js'); 
 })(function(mid, cid) {
     System.register(mid, [cid], function (_export, _context) {
     return {

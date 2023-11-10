@@ -1,7 +1,11 @@
-System.register("chunks:///internal.js",[],(function(){return{execute:function(){}}}));
+System.register("bundle://internal/internal.js", [], function () {
+  return {
+    execute: function () {}
+  };
+});
 
 (function(r) {
-  r('virtual:///prerequisite-imports/internal', 'chunks:///internal.js'); 
+  r('virtual:///prerequisite-imports/internal', 'bundle://internal/internal.js'); 
 })(function(mid, cid) {
     System.register(mid, [cid], function (_export, _context) {
     return {
