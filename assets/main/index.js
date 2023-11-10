@@ -27079,6 +27079,8 @@ System.register("bundle://main/main.js", ['cc'], function () {
         var _super = _createSuper(FinishState);
 
         function FinishState(manager) {
+          var _this$game;
+
           var _this;
 
           _classCallCheck(this, FinishState);
@@ -27095,6 +27097,7 @@ System.register("bundle://main/main.js", ['cc'], function () {
 
           _this.showLevelCompleteScreen();
 
+          (_this$game = _this.game) === null || _this$game === void 0 ? void 0 : _this$game.uiManager.pauseCountdown();
           return _this;
         }
 
@@ -29388,6 +29391,8 @@ System.register("bundle://main/main.js", ['cc'], function () {
             if (screens.includes(screenName)) {
               _this.uiManager.disableHeader();
 
+              _this.uiManager.setInteractableItemButtons(false);
+
               _this.uiManager.playExitAnimUI();
             }
           };
@@ -29408,7 +29413,9 @@ System.register("bundle://main/main.js", ['cc'], function () {
             if (screens.includes(screenName)) {
               _this.uiManager.enableHeader();
 
-              _this.playEntranceAnimUI();
+              _this.uiManager.setInteractableItemButtons();
+
+              _this.uiManager.playEntranceAnimUI();
             }
           };
 
@@ -38452,7 +38459,7 @@ System.register("bundle://main/main.js", ['cc'], function () {
 
       cclegacy._RF.pop();
 
-      var _dec$1J, _dec2$14, _dec3$R, _dec4$z, _dec5$o, _dec6$j, _dec7$d, _class$1O, _class2$W, _descriptor$U, _descriptor2$J, _descriptor3$v, _descriptor4$k, _descriptor5$h;
+      var _dec$1J, _dec2$14, _dec3$R, _dec4$z, _dec5$o, _dec6$j, _dec7$d, _dec8$8, _dec9$7, _dec10$6, _dec11$5, _dec12$4, _dec13$2, _class$1O, _class2$W, _descriptor$U, _descriptor2$J, _descriptor3$v, _descriptor4$k, _descriptor5$h, _descriptor6$a, _descriptor7$7, _descriptor8$6, _descriptor9$5, _descriptor10$4, _descriptor11$2;
 
       cclegacy._RF.push({}, "31829DUddVEq6NgIYHvnI68", "LevelCompleteScreen", undefined);
 
@@ -38465,7 +38472,16 @@ System.register("bundle://main/main.js", ['cc'], function () {
       var _globalThis$game$s = globalThis.game,
           event$M = _globalThis$game$s.event,
           player$k = _globalThis$game$s.player;
-      var LevelCompleteScreen = (_dec$1J = ccclass$1O('LevelCompleteScreen'), _dec2$14 = requireComponent$n(BaseScreen), _dec3$R = property$X(Node$1), _dec4$z = property$X(Node$1), _dec5$o = property$X(Node$1), _dec6$j = property$X(Node$1), _dec7$d = property$X(Button), _dec$1J(_class$1O = _dec2$14(_class$1O = (_class2$W = /*#__PURE__*/function (_Component) {
+      var LevelCompleteScreen = (_dec$1J = ccclass$1O('LevelCompleteScreen'), _dec2$14 = requireComponent$n(BaseScreen), _dec3$R = property$X(Node$1), _dec4$z = property$X(Label), _dec5$o = property$X(Node$1), _dec6$j = property$X(Node$1), _dec7$d = property$X(Button), _dec8$8 = property$X(Node$1), _dec9$7 = property$X(Animation), _dec10$6 = property$X(Node$1), _dec11$5 = property$X({
+        type: Animation,
+        group: 'Coin Container'
+      }), _dec12$4 = property$X({
+        type: AnimationClip,
+        group: 'Coin Container'
+      }), _dec13$2 = property$X({
+        type: AnimationClip,
+        group: 'Coin Container'
+      }), _dec$1J(_class$1O = _dec2$14(_class$1O = (_class2$W = /*#__PURE__*/function (_Component) {
         _inherits(LevelCompleteScreen, _Component);
 
         var _super = _createSuper(LevelCompleteScreen);
@@ -38493,6 +38509,18 @@ System.register("bundle://main/main.js", ['cc'], function () {
 
           _initializerDefineProperty(_this, "playButtonComponent", _descriptor5$h, _assertThisInitialized(_this));
 
+          _initializerDefineProperty(_this, "wellDoneText", _descriptor6$a, _assertThisInitialized(_this));
+
+          _initializerDefineProperty(_this, "coinAnimation", _descriptor7$7, _assertThisInitialized(_this));
+
+          _initializerDefineProperty(_this, "playButtonContainer", _descriptor8$6, _assertThisInitialized(_this));
+
+          _initializerDefineProperty(_this, "coinContainerAnimation", _descriptor9$5, _assertThisInitialized(_this));
+
+          _initializerDefineProperty(_this, "coinContainerEnterClip", _descriptor10$4, _assertThisInitialized(_this));
+
+          _initializerDefineProperty(_this, "coinContainerExitClip", _descriptor11$2, _assertThisInitialized(_this));
+
           _this.handleOpeningScreen = function () {
             _this.playButtonComponent.interactable = true;
           };
@@ -38509,14 +38537,46 @@ System.register("bundle://main/main.js", ['cc'], function () {
         _createClass(LevelCompleteScreen, [{
           key: "__preload",
           value: function __preload() {
+            var _this2 = this;
+
             this.getBaseScreen();
             this.listenScreenEvents();
+            var oldHandler = this.screen.open;
+
+            this.screen.open = function (data) {
+              _this2.overrideOpenHandler(oldHandler, data);
+            };
           }
         }, {
           key: "onDestroy",
           value: function onDestroy() {
             this.unListenScreenEvents();
           }
+        }, {
+          key: "overrideOpenHandler",
+          value: function () {
+            var _overrideOpenHandler = _asyncToGenerator(function* (oldHandler, data) {
+              var _this$screen$getCompo,
+                  _this3 = this; // reset coin text
+
+
+              this.coinText.string = 'x0';
+              this.playButtonComponent.interactable = false;
+              yield this.animateWellDoneText();
+              this.playButtonContainer.setScale(0, 0, this.playButtonContainer.scale.z);
+              oldHandler.call(this.screen, data); // run this.animateCoin() after open animation
+
+              (_this$screen$getCompo = this.screen.getComponent(Animation)) === null || _this$screen$getCompo === void 0 ? void 0 : _this$screen$getCompo.once(Animation.EventType.FINISHED, function () {
+                _this3.animateCoin();
+              });
+            });
+
+            function overrideOpenHandler(_x, _x2) {
+              return _overrideOpenHandler.apply(this, arguments);
+            }
+
+            return overrideOpenHandler;
+          }()
         }, {
           key: "getBaseScreen",
           value: function getBaseScreen() {
@@ -38551,6 +38611,18 @@ System.register("bundle://main/main.js", ['cc'], function () {
 
             if (!this.nextLevelText) {
               throw new Error('LevelCompleteScreen: nextLevelText not found');
+            }
+
+            if (!this.wellDoneText) {
+              throw new Error('LevelCompleteScreen: wellDoneText not found');
+            }
+
+            if (!this.coinAnimation) {
+              throw new Error('LevelCompleteScreen: coinAnimation not found');
+            }
+
+            if (!this.coinContainerAnimation) {
+              throw new Error('LevelCompleteScreen: coinContainerAnimation not found');
             }
           }
         }, {
@@ -38589,15 +38661,22 @@ System.register("bundle://main/main.js", ['cc'], function () {
           key: "open",
           value: function open() {
             this.updateComponents();
-            this.runPopUpAnimation();
           }
         }, {
           key: "close",
           value: function close() {
-            this.handleNextLevel();
-            this.playButtonComponent.interactable = false;
-            event$M.emit(Events$w.CLOSE_SCREEN, {
-              screenName: this.node.name
+            var _this4 = this;
+
+            AnimUtils.runTweenAsync(tween({}).delay(2)).then(function () {
+              _this4.coinContainerAnimation.play(_this4.coinContainerExitClip.name);
+
+              _this4.coinContainerAnimation.once(Animation.EventType.FINISHED, function () {
+                event$M.emit(Events$w.CLOSE_SCREEN, {
+                  screenName: _this4.node.name
+                });
+
+                _this4.handleNextLevel();
+              });
             });
           }
         }, {
@@ -38628,7 +38707,6 @@ System.register("bundle://main/main.js", ['cc'], function () {
           key: "updateComponents",
           value: function updateComponents() {
             this.updateLevelText();
-            this.updateCoinString();
           }
         }, {
           key: "updateLevelText",
@@ -38648,23 +38726,118 @@ System.register("bundle://main/main.js", ['cc'], function () {
         }, {
           key: "updateCoinString",
           value: function updateCoinString() {
-            this.coinText.getComponent(Label).string = "x".concat(this.coins);
+            this.coinText.string = "x".concat(this.coins);
             console.log('LevelCompleteScreen: updateCoinString', this.coins);
           }
         }, {
-          key: "runPopUpAnimation",
-          value: function runPopUpAnimation() {
-            if (!this.screen.container) {
-              console.warn('LevelCompleteScreen: screen not found');
-              return;
+          key: "animateCoin",
+          value: function () {
+            var _animateCoin = _asyncToGenerator(function* () {
+              if (!this.screen.container) {
+                console.warn('LevelCompleteScreen: screen not found');
+                return Promise.resolve();
+              }
+
+              this.coinAnimation.play();
+              yield this.animateCoinText({
+                contentFn: function contentFn(quantity_1) {
+                  return "x".concat(quantity_1);
+                },
+                currentQuantity: 0,
+                targetQuantity: this.coins
+              });
+              yield AnimUtils.runTweenAsync(this.showPlayButton());
+              this.updateCoinString();
+            });
+
+            function animateCoin() {
+              return _animateCoin.apply(this, arguments);
             }
+
+            return animateCoin;
+          }()
+        }, {
+          key: "showPlayButton",
+          value: function showPlayButton() {
+            var _this5 = this;
+
+            return tween(this.playButtonContainer).call(function () {
+              _this5.playButtonContainer.setScale(0, 0, _this5.playButtonContainer.scale.z);
+            }).to(0.5, {
+              scale: new Vec3(1, 1, 1)
+            }, {
+              easing: 'backOut'
+            }).call(function () {
+              _this5.playButtonComponent.interactable = true;
+            });
           } // ? Callback for click event of PlayButton
 
         }, {
           key: "handleClickedPlay",
           value: function handleClickedPlay() {
-            this.node.scene.emit(GameplayEvents.ADD_COINS, this.coins);
-            this.close();
+            var _this6 = this;
+
+            this.playButtonComponent.interactable = false;
+            this.coinContainerAnimation.play(this.coinContainerEnterClip.name);
+            this.coinContainerAnimation.once(Animation.EventType.FINISHED, function () {
+              _this6.node.scene.emit(GameplayEvents.ADD_COINS, _this6.coins);
+
+              _this6.close();
+            });
+          }
+        }, {
+          key: "animateWellDoneText",
+          value: function animateWellDoneText() {
+            var _this7 = this;
+
+            var ogPositon = this.wellDoneText.position.clone();
+            var t = tween(this.wellDoneText).call(function () {
+              _this7.wellDoneText.setPosition(0, 0, _this7.wellDoneText.position.z);
+
+              _this7.wellDoneText.setScale(0, 0, _this7.wellDoneText.scale.z);
+            }).to(0.5, {
+              scale: new Vec3(1.5, 1.5, 1)
+            }, {
+              easing: 'cubicOut'
+            }).to(0.5, {
+              scale: new Vec3(1, 1, 1)
+            }, {
+              easing: 'backOut'
+            }).to(0.5, {
+              position: ogPositon
+            }, {
+              easing: 'backOut'
+            });
+            return AnimUtils.runTweenAsync(t);
+          }
+        }, {
+          key: "animateCoinText",
+          value: function animateCoinText(_ref2) {
+            var _this8 = this;
+
+            var contentFn = _ref2.contentFn,
+                currentQuantity = _ref2.currentQuantity,
+                targetQuantity = _ref2.targetQuantity,
+                _ref2$duration = _ref2.duration,
+                duration = _ref2$duration === void 0 ? 0.8 : _ref2$duration;
+            var tweenTarget = {
+              currentQuantity: currentQuantity
+            };
+            var t = tween(tweenTarget).to(duration, {
+              currentQuantity: targetQuantity
+            }, {
+              easing: 'linear',
+              onUpdate: function onUpdate(target) {
+                if (!target) {
+                  return;
+                }
+
+                var currentQuantity = target.currentQuantity;
+                var intQuantity = Math.floor(currentQuantity);
+                _this8.coinText.string = contentFn(intQuantity);
+              }
+            });
+            return AnimUtils.runTweenAsync(t);
           }
         }]);
 
@@ -38690,6 +38863,36 @@ System.register("bundle://main/main.js", ['cc'], function () {
         writable: true,
         initializer: null
       }), _descriptor5$h = _applyDecoratedDescriptor(_class2$W.prototype, "playButtonComponent", [_dec7$d], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: null
+      }), _descriptor6$a = _applyDecoratedDescriptor(_class2$W.prototype, "wellDoneText", [_dec8$8], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: null
+      }), _descriptor7$7 = _applyDecoratedDescriptor(_class2$W.prototype, "coinAnimation", [_dec9$7], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: null
+      }), _descriptor8$6 = _applyDecoratedDescriptor(_class2$W.prototype, "playButtonContainer", [_dec10$6], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: null
+      }), _descriptor9$5 = _applyDecoratedDescriptor(_class2$W.prototype, "coinContainerAnimation", [_dec11$5], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: null
+      }), _descriptor10$4 = _applyDecoratedDescriptor(_class2$W.prototype, "coinContainerEnterClip", [_dec12$4], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: null
+      }), _descriptor11$2 = _applyDecoratedDescriptor(_class2$W.prototype, "coinContainerExitClip", [_dec13$2], {
         configurable: true,
         enumerable: true,
         writable: true,
@@ -39355,7 +39558,7 @@ System.register("bundle://main/main.js", ['cc'], function () {
 
       cclegacy._RF.pop();
 
-      var _dec$1N, _dec2$18, _dec3$U, _dec4$C, _dec5$q, _dec6$l, _dec7$f, _dec8$8, _dec9$7, _class$1S, _class2$Z, _descriptor$X, _descriptor2$M, _descriptor3$x, _descriptor4$m, _descriptor5$j, _descriptor6$a, _descriptor7$7;
+      var _dec$1N, _dec2$18, _dec3$U, _dec4$C, _dec5$q, _dec6$l, _dec7$f, _dec8$9, _dec9$8, _class$1S, _class2$Z, _descriptor$X, _descriptor2$M, _descriptor3$x, _descriptor4$m, _descriptor5$j, _descriptor6$b, _descriptor7$8;
 
       cclegacy._RF.push({}, "61932YLC/5CFrE0eD0ez8Zg", "SettingsScreen", undefined);
 
@@ -39370,7 +39573,7 @@ System.register("bundle://main/main.js", ['cc'], function () {
           event$Q = _globalThis$game$u.event,
           match$b = _globalThis$game$u.match,
           storage$4 = _globalThis$game$u.storage;
-      var SettingsScreen = (_dec$1N = ccclass$1S('SettingsScreen'), _dec2$18 = requireComponent$r(BaseScreen), _dec3$U = property$_(Node$1), _dec4$C = property$_(Node$1), _dec5$q = property$_(Node$1), _dec6$l = property$_(Button), _dec7$f = property$_(Button), _dec8$8 = property$_(Button), _dec9$7 = property$_(Button), _dec$1N(_class$1S = _dec2$18(_class$1S = (_class2$Z = /*#__PURE__*/function (_Component) {
+      var SettingsScreen = (_dec$1N = ccclass$1S('SettingsScreen'), _dec2$18 = requireComponent$r(BaseScreen), _dec3$U = property$_(Node$1), _dec4$C = property$_(Node$1), _dec5$q = property$_(Node$1), _dec6$l = property$_(Button), _dec7$f = property$_(Button), _dec8$9 = property$_(Button), _dec9$8 = property$_(Button), _dec$1N(_class$1S = _dec2$18(_class$1S = (_class2$Z = /*#__PURE__*/function (_Component) {
         _inherits(SettingsScreen, _Component);
 
         var _super = _createSuper(SettingsScreen);
@@ -39396,9 +39599,9 @@ System.register("bundle://main/main.js", ['cc'], function () {
 
           _initializerDefineProperty(_this, "continueButtonComponent", _descriptor5$j, _assertThisInitialized(_this));
 
-          _initializerDefineProperty(_this, "restartButtonComponent", _descriptor6$a, _assertThisInitialized(_this));
+          _initializerDefineProperty(_this, "restartButtonComponent", _descriptor6$b, _assertThisInitialized(_this));
 
-          _initializerDefineProperty(_this, "inviteFriendsButtonComponent", _descriptor7$7, _assertThisInitialized(_this)); // ! For Unlocking DevTools
+          _initializerDefineProperty(_this, "inviteFriendsButtonComponent", _descriptor7$8, _assertThisInitialized(_this)); // ! For Unlocking DevTools
 
 
           _this.triggerSequence = '';
@@ -39757,12 +39960,12 @@ System.register("bundle://main/main.js", ['cc'], function () {
         enumerable: true,
         writable: true,
         initializer: null
-      }), _descriptor6$a = _applyDecoratedDescriptor(_class2$Z.prototype, "restartButtonComponent", [_dec8$8], {
+      }), _descriptor6$b = _applyDecoratedDescriptor(_class2$Z.prototype, "restartButtonComponent", [_dec8$9], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: null
-      }), _descriptor7$7 = _applyDecoratedDescriptor(_class2$Z.prototype, "inviteFriendsButtonComponent", [_dec9$7], {
+      }), _descriptor7$8 = _applyDecoratedDescriptor(_class2$Z.prototype, "inviteFriendsButtonComponent", [_dec9$8], {
         configurable: true,
         enumerable: true,
         writable: true,
